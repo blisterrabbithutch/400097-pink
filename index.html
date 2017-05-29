@@ -5,8 +5,104 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <img src="#" alt="Логотип Пинк">
+      <div class="main-header__top-sandwich">
+        <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a href="#">Главная</a></li>
+            <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__list-item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="app-download-section">
+        <img src="#" alt="Фотография приложения">
+        <a href="#">Скачать приложение</a>
+        <div class="app-download-section__platrform-buttons">
+          <a class="app-download-section__platform-button app-download__platform-macintosh" href="https://itunes.com"></a>
+          <a class="app-download-section__platform-button
+            app-download-section__platform-android" href="https://play.google.com"></a>
+          <a class="app-download-section__platform-button
+            app-download-section__platform-windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone?rtc=1"></a>
+        </div>
+        <p class="app-download-section__text-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="app-features-section">
+        <div class="app-features-section__title">
+          <h1>Устали от серости мегаполиса?</h1>
+          <h1>Нам есть, что вам предложить!</h1>
+        </div>
+        <div class="app-features-section__list">
+          <div class="app-features-section__item">
+            <h2 class="app-features-section__item-title">Поднимает настроение</h2>
+            <p class="app-features-section__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="app-features-section__item">
+            <h2 class="app-features-section__item-title">Меняет мир вокруг</h2>
+            <p class="app-features-section__item-description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </div>
+          <div class="app-features__item">
+            <h2 class="app-features__item-title">Заводит новых друзей</h2>
+            <p class="app-features__item-description">
+              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+        </div>
+        <img src="#" alt="Картинка телефона" class="app-features__phone-image">
+      </section>
+      <section class="app-review-section">
+        <h2 class="app-review-section__author">Николай Петров</h2>
+        <blockquote class="app-review-section__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        <div class="app-review__slider">
+          <button type="button" class="app-review__slider-button"></button>
+          <button type="button" class="app-review__slider-button"></button>
+          <button type="button" class="app-review__slider-button"></button>
+        </div>
+      </section>
+      <section class="price-section">
+        <div class="price-section__header">
+          <div class="price-section__header-tariff-name">Стандарт</div>
+          <div class="price-section__header-tariff-hit">Хит</div>
+          <div class="price-section__header-tariff-cost">3,99 USD</div>
+        </div>
+        <div class="price-section__features-list">
+          <div class="price-section__feature">Розовый фильтр</div>
+          <div class="price-section__feature">Смайлики</div>
+          <div class="price-section__feature">Комментарии</div>
+        </div>
+        <div class="price-section__slider">
+          <button type="button" class="price-section__slider-button"></button>
+          <button type="button" class="price-section__slider-button"></button>
+          <button type="button" class="price-section__slider-button"></button>
+        </div>
+      </section>
+      <section class="contacts-section">
+        <h1 class="contacts-section__title">
+          Остались вопросы? Свяжитесь с нами!
+        </h1>
+        <div class="contacts-section__number-block">
+          <p class="contacts-section__number-title">Звоните:</p>
+          <p class="contacts-section__number">+7 (812) 555-66-66</p>
+        </div>
+        <div class="contacts-section__email-block">
+          <p class="contacts-section__email-title">Пишите:</p>
+          <p class="contacts-section__email">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contacts-section__adress-block">
+          <p class="contacts-section__adress-title">Приезжайте в гости:</p>
+          <p class="contacts-section__adress">ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <div class="contacts-section__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6731244344496!2d30.32088768999144!3d59.93756600973013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1495906308023" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
