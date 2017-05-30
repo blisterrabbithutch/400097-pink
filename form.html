@@ -6,15 +6,17 @@
   </head>
   <body>
     <header class="main-header">
-      <img src="#" alt="Логотип Пинк">
+      <div class="main-header__logo">
+        <img src="index.html" alt="Логотип Пинк">
+      </div>
       <div class="main-header__top-sandwich">
         <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="#">Главная</a></li>
-            <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__list-item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__list-item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
@@ -26,35 +28,63 @@
       <form action="https://echo.htmlacademy.ru/" class="form-list" method="post">
         <section class="form-list__username">
           <div class="form-list__username-title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </div>
-          <label for="username-surname" class="form-list__username-surname">Фамилия</label>
-          <input type="text" id="username-surname" required name="username-surname">
-          <label for="username-name" class="form-list__username-name">Имя</label>
-          <input type="text" id="username-name" required name="username-name">
-          <label for="username-secondname" class="form-list__username-secondname">Отчество</label>
-          <input type="text" id="username-secondname" required name="username-secondname">
+          <div class="form-list__username-field">
+            <label for="username-surname" class="form-list__username-surname">Фамилия</label>
+            <input type="text" id="username-surname" required name="username-surname">
+          </div>
+          <div class="form-list__username-field">
+            <label for="username-name" class="form-list__username-name">Имя</label>
+            <input type="text" id="username-name" required name="username-name">
+          </div>
+          <div class="form-list__username-field">
+            <label for="username-secondname" class="form-list__username-secondname">Отчество</label>
+            <input type="text" id="username-secondname" required name="username-secondname">
+          </div>
         </section>
         <section class="form-list__achievements">
           <p class="form-list__achievements-title">Ваши безбашенные достижения в путешествии</p>
-          <label for="achievement-shark" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-shark" name="achievement-shark" checked class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Сделал селфи с акулой</label>
-          <label for="achievement-beach" class="form-list__achievements-checkbox-label"><input type="checkbox" checked name="achievement-beach" id="achievement-beach" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Обгорел на пляже</label>
-          <label for="achievement-chuck" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-chuck" name="achievement-chuck" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Видел Чака Норриса</label>
-          <label for="achievement-gifts" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-gifts" name="achievement-gifts" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Накупил сувениров</label>
-          <label for="achievement-tower" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-tower" name="achievement-tower" checked class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Удержал башню</label>
-          <label for="achievement-hotel" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-hotel" name="achievement-hotel" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Разгромил отель</label>
+          <div class="form-list__achievements-field">
+            <label for="achievement-shark" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-shark" name="achievement-shark" checked class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Сделал селфи с акулой</label>
+          </div>
+          <div class="form-list__achievements-field">
+            <label for="achievement-beach" class="form-list__achievements-checkbox-label"><input type="checkbox" checked name="achievement-beach" id="achievement-beach" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Обгорел на пляже</label>
+          </div>
+          <div class="form-list__achievements-field">
+            <label for="achievement-chuck" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-chuck" name="achievement-chuck" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Видел Чака Норриса</label>
+          </div>
+          <div class="form-list__achievements-field">
+            <label for="achievement-gifts" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-gifts" name="achievement-gifts" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Накупил сувениров</label>
+          </div>
+          <div class="form-list__achievements-field">
+            <label for="achievement-tower" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-tower" name="achievement-tower" checked class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Удержал башню</label>
+          </div>
+          <div class="form-list__achievements-field">
+            <label for="achievement-hotel" class="form-list__achievements-checkbox-label"><input type="checkbox" id="achievement-hotel" name="achievement-hotel" class="form-list__achievements-checkbox"><span class="form-list__achievements-checkbox-indicator"></span>Разгромил отель</label>
+          </div>
         </section>
         <section class="form-list__contacts">
-          <label for="contacts-phone" class="form-list__contacts-phone">Номер телефона</label>
-          <input type="phone" id="contacts-phone" name="contacts-phone">
-          <label for="contacts-email" class="form-list__contacts-email">Адрес почты</label>
-          <input type="email" required id="email" name="contacts-email">
+          <div class="form-list__contacts-field">
+            <label for="contacts-phone" class="form-list__contacts-phone">Номер телефона</label>
+            <input type="phone" id="contacts-phone" name="contacts-phone">
+          </div>
+          <div class="form-list__contacts-field">
+            <label for="contacts-email" class="form-list__contacts-email">Адрес почты</label>
+            <input type="email" required id="email" name="contacts-email">
+          </div>
         </section>
         <section class="form-list__operation-system">
           <div class="form-list__operation-system-title">
             С каким приложением путешествовали?
           </div>
-          <label for="system-ios" class="form-list__operation-system-ios"><input type="radio" checked id="system-ios" name="operation-system" value="operation-system-ios"><span class="form-list__operation-system-radio-indicator"></span>Pink для iOS</label>          
-          <label for="system-android" class="form-list__operation-system-android"><input type="radio" id="system-android" name="operation-system" value="operation-system-android"><span class="form-list__operation-system-radio-indicator"></span>Pink на Android</label>          
-          <label for="system-windows" class="form-list__operation-system-winphone"><input type="radio" id="system-windows" name="operation-system" value="operation-system-windows"><span class="form-list__operation-system-radio-indicator"></span>Windows phone</label>          
+          <div class="form-list__operation-system-field">
+            <label for="system-ios" class="form-list__operation-system-ios"><input type="radio" checked id="system-ios" name="operation-system" value="operation-system-ios"><span class="form-list__operation-system-radio-indicator"></span>Pink для iOS</label>
+          </div>
+          <div class="form-list__operation-system-field">          
+            <label for="system-android" class="form-list__operation-system-android"><input type="radio" id="system-android" name="operation-system" value="operation-system-android"><span class="form-list__operation-system-radio-indicator"></span>Pink на Android</label>
+          </div>
+          <div class="form-list__operation-system-field">          
+            <label for="system-windows" class="form-list__operation-system-winphone"><input type="radio" id="system-windows" name="operation-system" value="operation-system-windows"><span class="form-list__operation-system-radio-indicator"></span>Windows phone</label>
+          </div>          
         </section>
         <section class="form-list__feedback">
           <div class="form-list__feedback-title">
@@ -67,13 +97,13 @@
       </form>
     </main>
     <footer class="footer-user-photo">
-      <img src="#" alt="Логотип Pink" class="footer-user-photo__logo">
+      <img src="index.html" alt="Логотип Pink" class="footer-user-photo__logo">
       <div class="footer-user-photo__social">
-        <a href="" class="footer-user-photo__social-button"></a>
-        <a href="" class="footer-user-photo__social-button"></a>
-        <a href="" class="footer-user-photo__social-button"></a>
+        <a href="" class="footer-user-photo__social-button footer-user-photo__social-button--twitter"></a>
+        <a href="" class="footer-user-photo__social-button footer-user-photo__social-button--facebook"></a>
+        <a href="" class="footer-user-photo__social-button footer-user-photo__social-button--googleplay"></a>
       </div>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-user-photo__developed">Разработано <img src="#" alt="Логотип Академии" class="footer-user-photo__developed-logo"></a>			
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-user-photo__developed">Разработано <img src="#" alt="Логотип Академии" class="footer-user-photo__developed-logo"></a>	
     </footer>
   </body>
 </html>
