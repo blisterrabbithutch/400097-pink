@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="main-header">
-      <img src="#" alt="Логотип Пинк">
+    <header class="main-header main-header--opened-menu">
+      <div class="main-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" width="77" height="26" alt="Логотип Пинк">
+      </div>
       <div class="main-header__top-sandwich">
         <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="#">Главная</a></li>
-            <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__list-item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="#">Главная</a></li>
+          <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+      </nav>
+    </header>      
     <main>
       <section class="app-download-section">
-        <img src="#" alt="Фотография приложения">
-        <a href="#">Скачать приложение</a>
-        <div class="app-download-section__platrform-buttons">
-          <a class="app-download-section__platform-button app-download__platform-macintosh" href="https://itunes.com"></a>
-          <a class="app-download-section__platform-button
-            app-download-section__platform-android" href="https://play.google.com"></a>
-          <a class="app-download-section__platform-button
-            app-download-section__platform-windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone?rtc=1"></a>
+        <img src="img/iphone-hand-mobile@1x.png" alt="Фотография приложения">
+        <div class="app-download-section__description">
+          <a href="#" class="app-download-section__description-download-button">Скачать приложение</a>
+        <div class="app-download-section__description-platform-buttons">
+          <a class="app-download-section__description-platform-button app-download-section__description-platform-button--macintosh" href="https://itunes.com"></a>
+          <a class="app-download-section__description-platform-button
+            app-download-section__description-platform-button--android" href="https://play.google.com"></a>
+          <a class="app-download-section__description-platform-button
+            app-download-section__description-platform-button--windows" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone?rtc=1"></a>
         </div>
-        <p class="app-download-section__text-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="app-download-section__description-text-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="app-features-section">
         <div class="app-features-section__title">
-          <h1>Устали от серости мегаполиса?</h1>
-          <h1>Нам есть, что вам предложить!</h1>
+          <h2>Устали от серости мегаполиса?</h2>
+          <h2>Нам есть, что вам предложить!</h2>
         </div>
         <div class="app-features-section__list">
           <div class="app-features-section__item">
@@ -48,22 +54,33 @@
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </div>
-          <div class="app-features__item">
-            <h2 class="app-features__item-title">Заводит новых друзей</h2>
-            <p class="app-features__item-description">
-              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+          <div class="app-features-section__item">
+            <h2 class="app-features-section__item-title">Заводит новых друзей</h2>
+            <p class="app-features-section__item-description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
+        
+        <img src="img/iphone-screen-mobile@1x.png" alt="Картинка телефона" class="app-features-section__phone-image">
         </div>
-        <img src="#" alt="Картинка телефона" class="app-features__phone-image">
       </section>
       <section class="app-review-section">
-        <h2 class="app-review-section__author">Николай Петров</h2>
-        <blockquote class="app-review-section__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-        <div class="app-review__slider">
-          <button type="button" class="app-review__slider-button"></button>
-          <button type="button" class="app-review__slider-button"></button>
-          <button type="button" class="app-review__slider-button"></button>
+        <article class="app-review-section__block">
+          <h2 class="app-review-section__block-author">Николай Петров</h2>
+          <blockquote class="app-review-section__block-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        </article>
+        <article class="app-review-section__block app-review-section__block--hidden">
+          <h2 class="app-review-section__block-author">Николай Петров</h2>
+          <blockquote class="app-review-section__block-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        </article>
+        <article class="app-review-section__block app-review-section__block--hidden">
+          <h2 class="app-review-section__block-author">Николай Петров</h2>
+          <blockquote class="app-review-section__block-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+        </article>
+        <div class="app-review-section__slider">
+          <button type="button" class="app-review-section__slider-button"></button>
+          <button type="button" class="app-review-section__slider-button"></button>
+          <button type="button" class="app-review-section__slider-button"></button>
         </div>
       </section>
       <section class="price-section">
@@ -84,9 +101,9 @@
         </div>
       </section>
       <section class="contacts-section">
-        <h1 class="contacts-section__title">
+        <h2 class="contacts-section__title">
           Остались вопросы? Свяжитесь с нами!
-        </h1>
+        </h2>
         <div class="contacts-section__number-block">
           <p class="contacts-section__number-title">Звоните:</p>
           <p class="contacts-section__number">+7 (812) 555-66-66</p>
