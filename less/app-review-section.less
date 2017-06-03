@@ -1,26 +1,48 @@
 .app-review-section {
-	text-align: center;
+
 }
 
-.app-review-section__block-author {
-	margin: 40px 0 0px 0;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
+.app-review-section__block {
+	height: 275px;
+	.container();
+	outline: 2px solid green;
 }
 
-.app-review-section__block-text {
-	margin: 10px 10px 10px 10px;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 30px;
-}
 
 .app-review-section__slider {
-	margin-top: 35px;
-	margin-bottom: 60px;
+	height: 75px;
+	.container();
+	outline: 2px solid green;
 }
 
 .app-review-section__block--hidden {
 	display: none;
+}
+
+
+
+@media @tablet-widths {
+
+.app-review-section__slider {
+	height: 60px;
+	.container();
+	outline: 2px solid green;
+}
+
+}
+
+@media @desktop-widths {
+
+.app-review-section__block {
+	height: 335px;
+	.container();
+	outline: 2px solid green;
+}
+
+.app-review-section__slider {
+	display:none;
+}
+  	
+
+
 }

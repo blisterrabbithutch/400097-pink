@@ -1,64 +1,56 @@
-.app-download-section {
-	background-color:#1d2631;
-	background-image: url("../img/bg-back-mobile@1x.jpg");
-	background-size: cover;
-	background-repeat:no-repeat;
-	height:720px;
-}
-
-.app-download-section img {
-	padding-top: 180px;
-	margin-left: auto;
-	margin-right: auto;
-	display:block;
+.app-download-section__image {
+	height:400px;
+	outline: 3px solid black;
+	.container();
 }
 
 .app-download-section__description {
-	background: #1d2631;
-	padding-top: 20px;
-	height:234px;
+	height:270px;
+	outline: 3px solid red;
+	.container();
 }
 
-.app-download-section__description-download-button {
-	box-sizing:border-box;
-	padding:10px 0px;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	display:block;
-	height:55px;
-	width: 90%;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	text-align:center;
-	color: white;
-	text-decoration:none;
-	border: 3px solid white;
-	border-radius: 50px;
 
-}
 
-.app-download-section__description-platform-buttons {
-	height:60px;
-	text-align:center;
-}
 
-.app-download-section__description-platform-button {
-	display: inline-block;
-	margin-left:15px;
-	background:black;
-	height:60px;
-	width:60px;
-}
 
-.app-download-section__description-text-description {
-	padding: 5px 8%;
-	color: #ffffff;
-	text-align: center;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 300;
+
+@media @tablet-widths {
+
+	.app-download-section {
+		position: relative;
+		.container();
 	}
+
+	.app-download-section__image {
+		position: absolute;
+		height: 615px;
+	}  
+
+	.app-download-section__description {
+		display:inline-block;
+		width: 350px;
+		height: 613px;
+	}  
+
+}
+
+@media @desktop-widths {
+
+	.app-download-section {
+		position: relative;
+		.container();
+	}
+
+	.app-download-section__image {
+		position: absolute;
+		height: 590px;
+	}  
+
+	.app-download-section__description {
+		display:inline-block;
+		width: 477px;
+		height: 590px;
+	}  
+  
+}

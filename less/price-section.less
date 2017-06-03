@@ -1,51 +1,73 @@
 .price-section {
-	padding-top: 60px;
-	background: #f2f2f2;
+	.container();
+	outline: 2px solid blue;
+	padding-top: 90px;
 }
 
 .price-section__header {
-	background: #283645;
-	color: white;
-	text-align:center;
+	outline: 2px solid blue;
 	height: 100px;
+
 }
 
-.price-section__header-tariff-name {
-	padding-top: 15px;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	text-transform: uppercase;
-}
-
-.price-section__header-tariff-hit {
-	display: none;
-}
-
-.price-section__header-tariff-cost {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 24px;
-	line-height: 30px;
-	text-transform: uppercase;
-	padding-top: 5px;
-}
-
-.price-section__feature {
-	background: white;
-	height: 60px;
-	box-sizing: border-box;
-	padding: 14px 22px;
-	border-bottom: 2px solid gray;
-	border-left: 2px solid gray;
-	border-right: 2px solid gray;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: uppercase;
+.price-section__features-list {
+	outline: 2px solid blue;
+	height: 180px;
 }
 
 .price-section__slider {
-	text-align: center;
-	margin-top: 35px;
-	padding-bottom: 50px;
+	outline: 2px solid blue;
+	margin-top: 30px;
+	height: 40px;
+	margin-bottom: 35px;
+
 }
+
+
+
+
+ @media @tablet-widths {
+
+ 	.price-section__header {
+	outline: 2px solid blue;
+	height: 75px;
+
+}
+
+.price-section__features-list {
+	outline: 2px solid blue;
+	height: 140px;
+	margin-bottom: 70px;
+}
+
+.price-section__slider {
+	display:none;
+}
+
+
+
+  }
+
+ @media @desktop-widths {
+
+ 	.price-section {
+	.container();
+	outline: 2px solid blue;
+	padding-top: 120px;
+}
+
+ 	.price-section__header {
+ 	padding-top: 0px;
+	outline: 2px solid blue;
+	height: 75px;
+
+}
+
+.price-section__features-list {
+	outline: 2px solid blue;
+	height: 150px;
+	margin-bottom: 75px;
+}
+
+
+  }

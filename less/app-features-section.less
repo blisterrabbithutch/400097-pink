@@ -1,58 +1,100 @@
-.app-features-section {
-	overflow: hidden;
-	1height: 985px;
-}
 
 .app-features-section__title {
-	display:block;
-	width:210px;
-	margin-left: auto;
-	margin-right:auto;
-	margin-bottom:50px;
+	height: 245px;
+	.container();
+	outline: 3px solid blue;
+
 }
 
-.app-features-section__title h2 {
-	margin-top:30px;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 24px;
-	font-weight: lighter;
-	color: #283645;
-}
+.app-features-section__list { 
+	height: 460px;
+	.container();
+	outline: 3px solid blue;
 
-.app-features-section__list {
-	position:relative;
-	background: #f2f2f2;
-	padding-top: 35px;
-}
-
-.app-features-section__item {
-	width: 263px;
-	margin: 0 auto 25px auto;
-}
-
-.app-features-section__item-title {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 18px;
-}
-
-.app-features-section__item-description {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-}
-
-.app-features-section__item:nth-child(3) {
-	padding-bottom:290px;
-	margin-bottom:0;
 }
 
 .app-features-section__phone-image {
 	display: block;
-	position:absolute;
-	bottom:-60px;
-	left:0;
-	right:0;
-	margin-left: auto;
-	margin-right: auto;
+	height: 295px;
+	.container();
+	outline: 3px solid blue;
 }
 
+.app-features-section__research-effect {
+	display: none;
+}
+
+
+
+@media @tablet-widths {
+
+.app-features-section {
+	.container();
+}
+
+.app-features-section__title {
+	height: 230px;
+	.container();
+	outline: 3px solid blue;
+}
+
+.app-features-section__list { 
+	height: 490px ;
+	width: 350px !important;
+	.container();
+	float:right;
+}
+
+.app-features-section__phone-image {
+	display: block;
+	height: 490px;
+	width: 310px !important;
+	.container();
+	outline: 3px solid blue;
+	float:left;
+}
+ 
+.app-features-section__research-effect {
+	display: block;
+	height: 355px;
+	outline: 3px solid blue;
+	content: "";
+    display: table;
+    clear: both;
+	.container();
+}
+
+}
+
+@media @desktop-widths {
+
+  	
+.app-features-section__title {
+	height: 230px;
+	.container();
+	outline: 3px solid blue;
+
+}
+
+.app-features-section__list { 
+	height: 500px;
+	width: auto !important;
+	.container();
+	float: none;
+	outline: 3px solid blue;
+
+}
+
+.app-features-section__phone-image {
+	display: none;
+}
+
+.app-features-section__research-effect {
+	display: block;
+	height: 350px;
+	outline: 3px solid blue;
+}
+
+
+
+}
