@@ -6,9 +6,11 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+// var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
+    // .pipe(sourcemaps.init())  
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -17,6 +19,7 @@ gulp.task("style", function() {
       ]})
     ]))
     .pipe(gulp.dest("css"))
+    // .pipe(sourcemaps.write('css/maps'))
     .pipe(server.stream());
 });
 

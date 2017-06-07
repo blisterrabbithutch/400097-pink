@@ -1,17 +1,25 @@
 .footer-app {
+	.container();
 	text-align:center;
+	outline: 2px solid blue;
+	height: 280px;
+	1display: block;
+	background: white;
 }
 
-.footer-app__logo img {
+.footer-app__logo {
 	padding-top: 30px;
 	margin: 0 auto;
+	height: 55px;
+	outline: 2px solid blue;
 	text-align:center;
 	display: block;
-	margin-bottom: 45px;
+	margin-bottom: 25px;
 }
 
 .footer-app__social {
-	height: 50px;
+	height: 60px;
+	outline: 2px solid blue;
 	word-spacing: 20px;
 	text-align: center;
 	margin-bottom:30px;
@@ -21,18 +29,132 @@
 	margin: 0 auto;
 	height: 50px;
 	width: 50px;
-	background: black;
+	background: green;
+	outline: 2px solid blue;
 	display: inline-block;
 }
 
 .footer-app__developed {
 	display:inline-block;
-	margin: 10px auto;
+	1margin: 10px auto;
+	outline: 2px solid blue;
 	text-align: center;
 	vertical-align:middle;
 	height:40px;
+	width: 180px;
 	line-height:40px;
 	text-decoration: none;
 }
 
+.index-page .footer-app {
+	display: none;
+}
 
+@media @tablet-widths {
+
+.footer-app {
+	vertical-align: top;
+	word-spacing: 40px;
+	.container();
+	text-align:center;
+	outline: 2px solid blue;
+	height: 128px;
+	1display: block;
+}
+
+.footer-app__logo {
+	vertical-align: top;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 55px;
+	width: 150px;
+	outline: 2px solid blue;
+	text-align: left;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.footer-app__social {
+	vertical-align: top;
+	height: 60px;
+	outline: 2px solid blue;
+	word-spacing: 20px;
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+
+.footer-app__social-button {
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+	background: green;
+	outline: 2px solid blue;
+	display: inline-block;
+}
+
+.footer-app__developed {
+	margin-top: 45px;
+	vertical-align: top;
+	display:inline-block;
+	1margin: 10px auto;
+	outline: 2px solid blue;
+	text-align: center;
+	height:40px;
+	width: 180px;
+	line-height:40px;
+	text-decoration: none;
+}
+
+.index-page .footer-app {
+	display: block;
+}
+  	
+
+}
+
+@media @desktop-widths {
+
+
+
+  	.footer-app {
+  		.container();
+  		display: block;
+		height: 225px;
+		outline: 2px solid blue;
+	}
+
+	.footer-app__logo {
+		outline: 2px solid pink;
+		height: 60px;
+		display:inline-block;
+		width: 190px;
+		float: left;
+		margin-left: 110px;
+		margin-top: 65px;
+	}
+
+	.footer-app__social {
+		    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 219px;
+    float: left;
+    margin-left: 191px;
+    margin-top: 95px;
+	}
+
+
+	.footer-app__developed {
+		    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 170px;
+    float: right;
+    margin-right: 125px;
+    margin-top: 95px;
+	}
+
+}

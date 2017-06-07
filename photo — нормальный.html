@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="photo-page">
-    <header class="main-header main-header--opened-menu">
-      <div class="main-header__wrapper">
-        <div class="main-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" width="77" height="26" alt="Логотип Пинк">
-        </div>
-        <div class="main-header__top-sandwich">
-          <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
-        </div> 
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+  <body>
+    <header class="main-header">
+      <a href="index.html" class="main-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+      </a>
+      <div class="main-header__top-sandwich">
+        <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
-      </nav> 
+        </nav>
+      </div>
     </header>
     <main>
       <section class="user-photos">
@@ -36,13 +33,11 @@
       </section>
       <section class="user-photos-content">
         <div class="user-photos-content__item">
-          <a href="#" class="user-photos-content__item-image
-            user-photos-content__item-image--best">
-           <img src="img/panorama-mobile@1x.jpg" width="320px" height="160px" alt="Фотография пользователя" class="">
-            <div class="user-photos-content__item-image-best-view">Панорама дня</div>
+          <a href="#" class="user-photos-content__item-image">
+            <img src="img/panorama-mobile@1x.jpg" width="320px" height="160px" alt="Фотография пользователя" class="">
+            <div class="user-photos-content__item-image-best">Панорама дня</div>
           </a>
           <div class="user-photos-content__item-quote">
-            <div class="user-photos-content__item-quote">
             <cite class="user-photos-content__item-quote-author"><span class="user-photos-content__item-quote-author-name">Анна</span> (5 минут назад)</cite>
             <blockquote class="user-photos-content__item-quote-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
             <p class="user-photos-content__item-quote-likes">Нравится: 215</p>
@@ -98,37 +93,21 @@
         </div>
       </section>
       <section class="photo-edit-section">
-        <div class="photo-edit-section__slogan">Затмите их всех!<br> Выкладывайте всё, что накопилось в телефоне!</div>
+        <div class="photo-edit-section__slogan">
+          Затмите их всех!<br> Выкладывайте всё, что накопилось в телефоне!
+        </div>
         <div class="photo-edit-section__photo"><img src="img/photo-7-mobile@1x.jpg" alt="Редактируемая фотография"></div>
         <div class="photo-edit-section__effects">
-          <div class="photo-edit-section__effects-block">
-            <div class="photo-edit-section__effects-block__slider">
-              <input type="range" min="1" max="10">
-            </div>
-            <div class="photo-edit-section__effects-block__icon photo-edit-section__effects-block__crop">
-            </div>
-          </div>
-          <div class="photo-edit-section__effects-block">
-            <div class="photo-edit-section__effects-block__slider">
-              <input type="range" min="1" max="10">
-            </div>
-            <div class="photo-edit-section__effects-block__icon photo-edit-section__effects-block__fill">
-            </div>
-          </div>
-          <div class="photo-edit-section__effects-block">
-            <div class="photo-edit-section__effects-block__slider">
-              <input type="range" min="1" max="10">
-            </div>
-            <div class="photo-edit-section__effects-block__icon photo-edit-section__effects-block__contrast">
-            </div>
-          </div>
-          <div class="photo-edit-section__effects-general-slider">
+          <div class="photo-edit-section__effects-button photo-edit-section__effects-button--crop"></div>
+          <div class="photo-edit-section__effects-button photo-edit-section__effects-button--fill"></div>
+          <div class="photo-edit-section__effects-button photo-edit-section__effects-button--contrast"></div>
+          <div class="photo-edit-section__effects-slider">
             <input type="range" min="1" max="10">
           </div>
-          <div class="photo-edit-section__buttons">
-            <button class="photo-edit-section__buttons-item photo-edit-section__buttons-post">Запостить</button>
-            <button class="photo-edit-section__buttons-item photo-edit-section__buttons-cancel">Отмена</button>
-          </div>
+        </div>
+        <div class="photo-edit-section__buttons">
+          <button class="photo-edit-section__buttons-item photo-edit-section__buttons-post">Запостить</button>
+          <button class="photo-edit-section__buttons-item photo-edit-section__buttons-cancel">Отмена</button>
         </div>
       </section>
     </main>

@@ -1,9 +1,11 @@
 .user-photos {
-	
+	.container();
 	background: url("../img/bg-back-mobile@1x.jpg")
 }
 
 .user-photos__title {
+	outline: 2px solid red;
+	height: 170px;
 	color: white;
 	margin: 0 auto;
 	padding-top: 100px;
@@ -17,6 +19,8 @@
 }
 
 .user-photos__description {
+	outline: 2px solid red;
+	height: 185px;
 	box-sizing:border-box;
 	padding-top: 50px;
 	background: white;
@@ -25,59 +29,37 @@
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-spacing: 30px;
+	color: black;
 }
 
-.user-photos-content__item-image {
-	width: 280px;
-	margin: 0 auto;
-	display: block;
-	position: relative;
+
+@media @tablet-widths {
+	.user-photos__title {
+	outline: 2px solid red;
+	height: 330px;
 }
 
-.user-photos-content__item-image-best {
-	width: 140px;
-	height: 28px;
-	text-transform: uppercase;
-	color: white;
-	padding-top: 8px;
-	position: absolute;
-	bottom:127px;
-	right:20px;
-	background: #d22856;
-	text-align: center;
+.user-photos__description {
+	outline: 2px solid red;
+	height: 225px;
 }
 
-.user-photos-content__item-quote {
-	width: 280px;
-	background: #f2f2f2;
-	margin: 0 auto;
+
 }
 
-.user-photos-content__item-quote-author {
-	display: block;
-	padding-top: 15px;
-	padding-left: 15px;
-	font-style: normal;
+@media @desktop-widths {
+
+	.user-photos__title {
+	outline: 2px solid red;
+	height: 390px;
+	box-sizing: border-box;
+	padding-top: 200px;
 }
 
-.user-photos-content__item-quote-author-name {
-	font-weight: bold;
-	font-style: normal;
+	.user-photos__description {
+	outline: 2px solid red;
+	height: 245px;
 }
 
-.user-photos-content__item-quote-text {
-	margin: 5px 15px;
-	font-size: 14px;
- 	font-family: "Open Sans", Arial, sans-serif;
- 	line-height: 24px;
-}
 
-.user-photos-content__item-quote-likes {
-	padding-bottom: 28px;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 12px;
-	line-spacing: 24px;
-	text-transform: uppercase;
-	color: #d22856;
-	padding-left: 10%;
 }

@@ -2,13 +2,16 @@
 
   	.contacts-section {
   		.container();
+      background: white;
 
   	}
 
 
 
   	.contacts-section__title {
+      text-align: center;
   		margin: 0;
+      color: black;
   		outline: 2px solid purple;
   		height: 120px;
 
@@ -19,55 +22,87 @@
   		height: 80px;
   	}
 
+    .contacts-section__number-title,
+    .contacts-section__number,
+    .contacts-section__email-title,
+    .contacts-section__email,
+    .contacts-section__adress-title,
+    .contacts-section__adress, {
+      color: black;
+      text-align: center;
+    }
+
+    .contacts-section__number,
+    .contacts-section__email,
+    .contacts-section__adress, {
+      margin:0;
+      color: #d22856;
+    }
+
+
   	  	.contacts-section__block:nth-child(4) {
   		outline: 2px solid purple;
   		height: 130px;
   	}
 
+    .tablet-map,
+    .desktop-map { 
+      display:none;
+    }
+
   	.contacts-section__map {
+      margin-top: 28px;
 		height: 200px;
 		outline: 2px solid green;
   	}
 
-	.footer-app {
-		display:none;
-	}
 
 
 
 
 @media @tablet-widths {
 
+    .contacts-section {
+      .container();
+      background: white;
+    }
+
   	.contacts-section__title {
+      box-sizing: border-box;
+      padding-top: 50px;
   		margin: 0;
   		outline: 2px solid purple;
   		height: 170px;
 
   	}
 
-  	.contacts-section__block {
+  	.contacts-section__number-block,
+    .contacts-section__email-block,
+    .contacts-section__adress-block {
+      display: inline-block;
   		outline: 2px solid purple;
   		height: 100px;
+      width: 300px;
   	}
 
-  	  	.contacts-section__block:nth-child(3) {
-  		outline: 2px solid purple;
-  		height: 135px;
-  	}
+      .contacts-section__adress-block {
+        margin-top: 20px;
+        margin-left: 150px;
+      }
 
-  		.contacts-section__block:nth-child(4) {
-  		display:none;
-  	}
+ 
+
 
   	.contacts-section__map {
-		height: 250px;
+      margin:0;
+		height: 370px;
 		outline: 2px solid green;
   	}
 
-  	.footer-app {
-		display:none;
-	}
-
+  .mobile-map,
+    .desktop-map { 
+      display:none;
+    }
 
 }
 
@@ -75,6 +110,7 @@
 
   	.contacts-section__title {
   		margin: 0;
+      padding-top: 60px;
   		outline: 2px solid purple;
   		height: 175px;
 
@@ -95,42 +131,9 @@
 		outline: 2px solid green;
   	}
 
-  	.footer-app {
-  		.container();
-  		display: block;
-		height: 155px;
-		outline: 2px solid blue;
-	}
-
-	.footer-app__logo {
-		outline: 2px solid pink;
-		height: 60px;
-		display:inline-block;
-		width: 130px;
-		float: left;
-		margin-left: 100px;
-		margin-top: 50px;
-	}
-
-	.footer-app__social {
-		outline: 2px solid pink;
-		height: 60px;
-		display:inline-block;
-		width: 160px;
-		float: left;
-		margin-left: 170px;
-		margin-top: 50px;
-	}
-
-
-	.footer-app__developed {
-		outline: 2px solid pink;
-		height: 60px;
-		display:inline-block;
-		width: 130px;
-		float: right;
-		margin-right: 100px;
-		margin-top: 50px;
-	}
+  .tablet-map,
+    .mobile-map { 
+      display:none;
+    }
 
 }

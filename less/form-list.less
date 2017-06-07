@@ -1,141 +1,289 @@
 .form-list {
-	padding-top: 50px;
+	background:white;
+	.container();
+	text-align:center;
 }
 
-.form-list__username-title {
+.form-list__username {
+	.container();
+	outline: 2px solid red;
+}
+
+.form-list__title {
+	height: 160px;
+	outline: 2px solid red;
+	font-family:"Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 30px;
-	font-familty: "Open Sans", Arial, sans-serif;
-	margin-bottom: 35px;
-	color: #283645;
+	color: black;
+	background: white;
+	.container();
+	box-sizing: border-box;
+	padding-top: 45px;
+}
+
+.form-list__title span {
+	display: none;
+}
+
+.form-list__username-field {
+	outline: 2px solid blue;
+	height: 125px;
+	background: white;
 }
 
 .form-list__username-field label {
 	display: block;
 	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 30px;
+	text-align:left;
+	padding-left: 20px;
 	margin-bottom: 10px;
-}
-
-.form-list__username-field input {
-	height: 50px;
-	margin-bottom: 25px;
-	width: 90%;
 }
 
 .form-list__achievements {
 	background: #f2f2f2;
+	color: black;
+	outline: 2px solid pink;
+	height: 710px;
+	.container();
 }
 
 .form-list__achievements-title {
-	padding-top: 40px;
+	outline: 2px solid red;
+	padding-top: 20px;
 	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	margin-bottom: 40px;
+	height: 80px;
 }
 
 .form-list__achievements-field {
-	height: 40px;
-	text-align:center;
-	1margin-top: 40px;
-	padding-bottom: 40px;
-}
-
-
-.form-list__achievements-checkbox-label {
-	height: 40px;
-	margin-top: 40px;
+	outline: 2px solid red;
+	padding-top: 18px;
+	line-height: 30px;
+	height: 83px;
 }
 
 .form-list__contacts {
-	padding-top: 40px;
+	background: white;
 	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	outline: 2px solid pink;
+	height: 260px;
+	padding-top: 25px;
+	.container();
+}
+
+.form-list__contacts-title {
+	display: none;
 }
 
 .form-list__contacts-field {
-	margin-bottom: 40px;
-}
-
-.form-list__contacts-field label {
-	margin-bottom:10px;
-	display:block;
-}
-
-.form-list__contacts-field input {
-	height: 50px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	outline: 2px solid red;
+	height: 120px;
 }
 
 .form-list__operation-system {
 	background: #f2f2f2;
+	color: black;
+	outline: 2px solid pink;
+	height: 325px;
+	padding-top: 15px;
+	.container();
 }
 
 .form-list__operation-system-title {
-	padding-top: 40px;
 	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	margin-bottom: 25px;
+	outline: 2px solid red;
+	height: 80px;
 }
 
 .form-list__operation-system-field {
-	height:40px;
-	padding-bottom:40px;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	color: #283645;
+	outline: 2px solid red;
+	height: 81px;
 }
 
 .form-list__feedback {
-	padding-top: 40px;
-	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	background:white;
+	height: 320px;
+	outline: 2px solid green;
+	.container();
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 .form-list__feedback-title {
-	margin-bottom:20px;
+	color: #d22856;
+
+	outline: 2px solid red;
+	padding-top: 20px;
+	height: 50px;
 }
 
 .form-list__feedback textarea {
-	height:200px;
+	outline: 2px solid red;
+	height: 200px;
 	width: 80%;
+	margin: 0 auto;
 }
 
 .form-list button {
 	background: #2aab6d;
-	height:60px;
-	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	width: 90%;
-	margin: 0 5%;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	border:none;
+	outline: 2px solid red;
+	height: 60px;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .form-list__required-fields {
-	padding-top: 35px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: black;
+	box-sizing: border-box;
+	padding-top: 30px;
+	height: 90px;
+	outline: 2px solid blue;
+}
+
+.form-list__required-fields span {
+	color: #d22856;
+}
+
+@media @tablet-widths {
+
+.form-list {
+
+}
+
+
+.form-list__username {
+	.container();
+	outline: 2px solid red;
+}
+
+.form-list__title {
+	height: 220px;
+	 width: 400px;
+	outline: 2px solid red;
+}
+
+.form-list__title span {
+	display: block;
+}
+
+.form-list__username-field {
+	outline: 2px solid blue;
+	height: 125px;
+}
+
+.form-list__achievements {
+	outline: 2px solid blue;
+	height: 710px;
+}
+
+.form-list__achievements-field {
+	width: 350px;
+}
+
+.form-list__contacts {
+	outline: 2px solid blue;
+	height: 335px;
+}
+
+.form-list__contacts-phone,
+.form-list__contacts-email {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+.form-list__contacts-title {
+	display: block;
+}
+
+.form-list__operation-system {
+	outline: 2px solid blue;
+	padding-top: 15px;
+	.container();
+	margin-bottom: 100px;
+}
+
+.form-list__operation-system-field {
+	width: 300px;
+}
+
+.form-list__feedback {
+	height: 370px;
+	outline: 2px solid green;
+	.container();
 	text-align: center;
-	margin-bottom:40px;
+}
+
+.form-list__feedback textarea {
+	margin: 30px auto;
+}
+
+
+}
+
+
+
+@media @desktop-widths {
+
+
+.form-list__username {
+	.container();
+	outline: 2px solid red;
+}
+
+.form-list__title {
+	height: 150px;
+	width: 820px;
+	outline: 2px solid red;
+}
+
+.form-list__username {
+	width: 470px !important;
+	display: inline-block;
+	outline: 2px solid green;
+
+}
+
+.form-list__contacts {
+	height: 185px;
+}
+
+.form-list__contacts-field {
+	    box-sizing: border-box;
+    padding-top: 20px;
+    outline: 2px solid red;
+    height: 120px;
+    display: inline-block;
+    width: 480px;
+}
+
+.form-list__username-field {
+	display:inline-block;
+	width: 300px;
+	outline: 2px solid blue;
+	height: 125px;
+}
+
+.form-list__achievements {
+	height: 320px;
+}
+
+.form-list__achievements-title {
+	margin: 0;
+}
+
+.form-list__achievements-field {
+	display: inline-block;
+}
+
+.form-list__operation-system {
+	width: 500px;
+	margin-bottom: 0;
+}
+
 }

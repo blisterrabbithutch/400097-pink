@@ -1,5 +1,31 @@
 .app-review-section {
+	background: white;
+	.container();
 
+}
+
+.app-review-section__block-author {
+	padding-top: 30px;
+	margin:0;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: black;
+	text-align: center;
+}
+
+.app-review-section__block-text {
+	margin: 10px 10px 10px 10px;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	color:black
+
+}
+
+
+.app-review-section__block--hidden {
+	display: none;
 }
 
 .app-review-section__block {
@@ -15,9 +41,6 @@
 	outline: 2px solid green;
 }
 
-.app-review-section__block--hidden {
-	display: none;
-}
 
 
 
@@ -33,8 +56,13 @@
 
 @media @desktop-widths {
 
+.app-review-section__block-author {
+	padding-top: 140px;
+}
+
+
 .app-review-section__block {
-	height: 335px;
+	height: 420px;
 	.container();
 	outline: 2px solid green;
 }
