@@ -45,3 +45,19 @@
     background-size: 50px 50px;
     background-repeat: repeat;
 }
+
+.container-fluid () {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 84%;        /* 640px / 768px ~= 84% */
+    max-width: 960px;  /* 960px / .84 ~= 1142px (центровка начнётся чуть раньше 1200px) */ 
+    margin: 0 auto;
+  }
+
+}
+
+.max-width() {
+  max-width: 1500px;
+  margin:0 auto;
+}

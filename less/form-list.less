@@ -1,6 +1,5 @@
 .form-list {
 	background:white;
-	.container();
 	text-align:center;
 }
 
@@ -152,17 +151,20 @@
 @media @tablet-widths {
 
 .form-list {
-
+	display: flex;
+	flex-direction: column;
 }
 
 
 .form-list__username {
+	order: 2;
 	.container();
 	outline: 2px solid red;
 }
 
 .form-list__title {
 	height: 220px;
+	order: 1;
 	 width: 400px;
 	outline: 2px solid red;
 }
@@ -177,6 +179,8 @@
 }
 
 .form-list__achievements {
+	order: 5;
+	background: white;
 	outline: 2px solid blue;
 	height: 710px;
 }
@@ -186,6 +190,7 @@
 }
 
 .form-list__contacts {
+	order: 4;
 	outline: 2px solid blue;
 	height: 335px;
 }
@@ -202,9 +207,11 @@
 }
 
 .form-list__operation-system {
+	order: 3;
 	outline: 2px solid blue;
 	padding-top: 15px;
 	.container();
+	background: white;
 	margin-bottom: 100px;
 }
 
@@ -213,6 +220,7 @@
 }
 
 .form-list__feedback {
+	order: 6;
 	height: 370px;
 	outline: 2px solid green;
 	.container();
@@ -223,6 +231,13 @@
 	margin: 30px auto;
 }
 
+.form-list button {
+	order: 7;
+}
+
+.form-list__required-fields {
+	order: 8;
+}
 
 }
 

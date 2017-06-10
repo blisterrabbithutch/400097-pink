@@ -1,5 +1,4 @@
 .footer-app {
-	.container();
 	text-align:center;
 	outline: 2px solid blue;
 	height: 280px;
@@ -55,7 +54,7 @@
 .footer-app {
 	vertical-align: top;
 	word-spacing: 40px;
-	.container();
+	width: 100%;
 	text-align:center;
 	outline: 2px solid blue;
 	height: 128px;
@@ -117,13 +116,18 @@
 
 @media @desktop-widths {
 
-
+.index-page .footer-app {
+	display: flex;
+}
 
   	.footer-app {
-  		.container();
+  		width: 100%;
+  		text-align: center;
   		display: block;
 		height: 225px;
 		outline: 2px solid blue;
+		display: flex;
+		justify-content: space-around;
 	}
 
 	.footer-app__logo {
@@ -131,7 +135,7 @@
 		height: 60px;
 		display:inline-block;
 		width: 190px;
-		float: left;
+		margin: 0;
 		margin-left: 110px;
 		margin-top: 65px;
 	}
@@ -141,8 +145,6 @@
     height: 60px;
     display: inline-block;
     width: 219px;
-    float: left;
-    margin-left: 191px;
     margin-top: 95px;
 	}
 
@@ -152,7 +154,6 @@
     height: 60px;
     display: inline-block;
     width: 170px;
-    float: right;
     margin-right: 125px;
     margin-top: 95px;
 	}

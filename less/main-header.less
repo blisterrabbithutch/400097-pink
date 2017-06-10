@@ -2,8 +2,10 @@
 
 .main-header {
   height: 325px;
-  .container();
+  width: auto;
   position: static;
+  text-align: center;
+  flex-direction: column;
 }
 
 .main-header__wrapper {
@@ -35,6 +37,8 @@
 
   .main-header {
     position:absolute;
+    width: auto;
+  display: flex;
   top:0;
   left:0;
   right:0;
@@ -45,10 +49,12 @@
 
    .main-header__wrapper {
     height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .main-header__logo {
-  	outline: 3px solid red;
   }
 
   .main-header__top-sandwich {
@@ -61,12 +67,17 @@
 @media @desktop-widths {
 
   .main-header {
+        z-index: 2;
     height: 90px;
     position:absolute;
   top:0;
   left:0;
   right:0;
   margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(40, 54, 69, 0.7);
   }
 
   .main-header__wrapper {
@@ -83,9 +94,8 @@
 }
 
   .main-header__logo {
-    width: 200px;
-    height: 85px;
-    margin-left:100px;
-    outline: 3px solid red;
+    1width: 200px;
+    1height: 85px;
+    1margin-left:100px;
   }
 }
