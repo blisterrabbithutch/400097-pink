@@ -1,19 +1,22 @@
 .photo-edit-section {
 	background: #f2f2f2;
 	text-align: center;
+
+    padding-bottom: 15px;
 }
 
 
 .photo-edit-section__slogan {
-	height: 170px;
-	outline: 2px solid red;
-	margin-bottom: 20px;
-	background: white;
-	color: black;
-	text-align:center;
-	box-sizing: border-box;
-	padding-top: 30px;
-
+    height: 170px;
+    outline: 2px solid red;
+    margin-bottom: 20px;
+    background: white;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 46px;
+    font-size: 15px;
+    line-height: 29px;
 }
 
 .photo-edit-section__photo {
@@ -26,7 +29,7 @@
 }
 
 .photo-edit-section__effects {
-	height: 325px;
+	word-spacing: 24px;
 	outline: 2px solid blue;
 	width: 280px;
 	margin: 0 auto;
@@ -35,27 +38,46 @@
 .photo-edit-section__effects-block {
 	height: 50px;
 	display: inline-block;
-	outline: 5px solid purple;
 	width: 50px;
-	margin: 0 15px 0 20px;
-	background: red;
+	margin: 10px 0 0 0;
 	margin-bottom: 15px;
 }
 
+.photo-edit-section__effects-block__crop {
+	background: url("../img/icon-editor-crop.svg");
+	width: 50px;
+	height: 50px;
+}
+
+.photo-edit-section__effects-block__contrast {
+	background: url("../img/icon-editor-contrast.svg") no-repeat 10px 10px;
+	width: 50px;
+	height: 50px;
+}
+
+.photo-edit-section__effects-block__fill {
+	background: url("../img/icon-editor-fill.svg") 0 5px;
+	width: 50px;
+	height: 50px;
+}
 
 .photo-edit-section__effects-block__slider {
 	display: none;
 }
 
 .photo-edit-section__effects-general-slider {
-	outline: 2px solid green;
-	height: 55px;
-	width: 280px;
-	margin: 0 auto;
-	box-sizing: border-box;
-	text-align:center;
-	padding-top: 20px;
-	margin-bottom: 40px;
+    outline: 2px solid green;
+    height: 25px;
+    width: 280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    /* padding-top: 20px; */
+    margin-bottom: 24px;
+}
+
+.photo-edit-section__effects-general-slider input {
+	width: 80%;
 }
 
 .photo-edit-section__slider {
@@ -68,26 +90,40 @@
  
 
 .photo-edit-section__buttons {
-	height: 125px;
-	outline: 2px solid red;
 	width: 280px;
 	box-sizing: border-box;
 	text-align:center;
-	padding-top: 20px;
+    padding-top: 35px;
 	color:#8e1e26;
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
 
-.photo-edit-section__effects-general-slider {
-
+.photo-edit-section__buttons-item {
+	display: block;
+	background: none;
+	color: #d22856;
+	border: 4px solid #d22856;
+	height: 58px;
+	font-weight: bold;
+	width: 100%;
+	border-radius: 40px;
+	margin-bottom: 10px;
 }
+
+.photo-edit-section__buttons-cancel {
+	color: #dddfe0;
+	border: 4px solid #dddfe0;
+}
+
+
 
     @media @tablet-widths {
 
 .photo-edit-section {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .photo-edit-section__effects-block {
@@ -113,7 +149,8 @@
 }
 
 .photo-edit-section__slogan {
-	height: 190px;
+	height: 170px;
+	width: 100%;
 	outline: 2px solid red;
 }
 
@@ -128,8 +165,33 @@
 }
 
 
+
 .photo-edit-section__photo img {
 	height: 100%;
+}
+
+
+
+.photo-edit-section__effects-block {
+	display: flex;
+	height: 35px;
+    margin-bottom: 36px;
+}
+
+.photo-edit-section__effects-block__icon {
+	display: inline-block;
+	background-size: 25px;
+    background-repeat:no-repeat;
+    background-position: 15px 5px;
+}
+
+.photo-edit-section__effects-block__slider {
+    display: inline-block;
+}
+
+.photo-edit-section__effects-block__slider input {
+	width: 130%;
+	margin-left: 15px;
 }
 
 .photo-edit-section__slider {
@@ -137,8 +199,9 @@
 }
 
 .photo-edit-section__buttons {
-margin-top: 60px;
-height:135px;
+    margin-top: 83px;
+    padding-top: 0px;
+    height: 136px;
 
 }
 
@@ -146,15 +209,25 @@ height:135px;
 	display: none;
 }
  
+.photo-edit-section__buttons-item {
+    margin-bottom: 21px;
+}
+
 }
 
 	@media @desktop-widths {
+
+.photo-edit-section {
+	justify-content: center;
+}
 
 .photo-edit-section__slogan {
 	height: 170px;
 	outline: 2px solid red;
 	margin-bottom: 10px;
-
+    box-sizing: border-box;
+    padding-top: 55px;
+    font-size: 19px;
 }
 
 .photo-edit-section__photo {
@@ -162,13 +235,13 @@ height:135px;
 	outline: 2px solid red;
 	width: 300px;
 	margin-top: 60px;
-	margin-left: 210px;
+	margin-left: 25px;
 	margin-bottom: 60px;
 
 }
 
 .photo-edit-section__effects {
-	height: 200px;
+	min-height: 200px;
 	outline: 2px solid blue;
 	width: 440px;
 	margin: 60px 0 10px 60px;
@@ -176,11 +249,35 @@ height:135px;
 
 .photo-edit-section__effects-block {
 	font-size: 0;
-	height: 55px;
-	outline: 3px solid green;
-	display: inline-block;
-	width: 100%;
-	margin: 0 0 5px 0;
+    height: 50px;
+    outline: 3px solid green;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 0 18px 0;
+}
+
+.photo-edit-section__effects-block input {
+	margin-left: 50px;
+	margin-top: 10px;
+	width: 160%;
+}
+
+.photo-edit-section__effects-block__icon {
+    display: inline-block;
+    margin-left: 25px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.photo-edit-section__buttons-item {
+	    display: inline-block;
+    background: none;
+    height: 58px;
+    font-weight: bold;
+    width: 46%;
+    border-radius: 40px;
 }
 
 .photo-edit-section__slider {
@@ -189,9 +286,8 @@ height:135px;
 
 .photo-edit-section__buttons {
 	height: 60px;
-	outline: 2px solid red;
-	width: 400px;
-	margin: 135px 0 50px 30px;
+    width: 410px;
+    margin: 155px 0 50px 30px;
 
 }
 

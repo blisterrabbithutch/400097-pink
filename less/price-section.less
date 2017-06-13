@@ -1,7 +1,10 @@
 .price-section {
+	height: 350px;
 	outline: 2px solid blue;
-	padding-top: 90px;
-	padding-bottom: 100px;
+	padding-top: 95px;
+	padding-bottom: 30px;
+	overflow: hidden;
+	position: relative;
 	background-color: #f2f2f2;
 	color: black;
 }
@@ -9,20 +12,28 @@
 
 .price-section__table {
 	height: 280px;
-	width: 100%;
+    left: -511px;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 1091px;
 }
 
 .price-section__header {
 	text-align: center;
-	background: #283645;
-	color: white;
-	outline: 2px solid blue;
-	height: 100px;
+    background: #283645;
+    color: white;
+    outline: 2px solid blue;
+    height: 95px;
+    width: 280px;
 }
 
 .price-section__cell {
-	text-align: center;
+	height: 60px;
+    padding-left: 20px;
+	text-align: left;
 	background: white;
+	position: relative;
 	border: 2px solid #e5e5e5;
 }
 
@@ -45,6 +56,29 @@
 	text-transform: uppercase;
 }
 
+.price-section__cell--check:after {
+	background: url(../img/icon-yes.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    width: 19px;
+    height: 18px;
+}
+
+.price-section__cell--cross:after {
+	background: url(../img/icon-no.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    width: 26px;
+    height: 27px;
+}
+
+
 .price-section__features-list {
 	outline: 2px solid blue;
 	height: 180px;
@@ -52,17 +86,28 @@
 
 .price-section__slider {
 	outline: 2px solid blue;
-	margin-top: 30px;
+	margin-top: 307px;
 	height: 40px;
 }
 
 
  @media @tablet-widths {
 
+ 	.price-section {
+ 		height: 258px;
+ 	}
+
  	.price-section__header {
 	outline: 2px solid blue;
 	height: 75px;
+}
 
+.price-section_cell-feature {
+	visibility: hidden;
+}
+
+.price-section__cell {
+	height: 43px;
 }
 
 .price-section__features-list {
@@ -78,7 +123,33 @@
 
 .price-section__table {
 	height: 220px;
-	width: 100%;
+	width: 93%;
+    left: 6px;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.price-section__cell--check:after {
+	background: url(../img/icon-yes.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 60px;
+    width: 19px;
+    height: 18px;
+}
+
+.price-section__cell--cross:after {
+	background: url(../img/icon-no.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 55px;
+    width: 26px;
+    height: 27px;
 }
 
 

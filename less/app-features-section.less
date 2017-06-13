@@ -13,7 +13,7 @@
 }
 
 .app-features-section__title h2 {
-	padding-top:30px;
+	padding-top:42px;
 	margin: 0;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 24px;
@@ -21,7 +21,20 @@
 	color: #283645;
 }
 
+.app-features-section__title h2:last-child {
+	padding-top:32px;
+}
 
+.app-features-section__list { 
+	padding-top: 37px;
+    text-align: center;
+	color: black;
+	outline: 3px solid blue;
+	padding-bottom:288px;
+	position: relative;
+	overflow:hidden;
+	background: #f2f2f2;
+}
 
 .app-features-section__list-item {
 
@@ -32,37 +45,22 @@
 .app-features-section__list-item-title {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 18px;
+	margin-bottom: 10px;
 }
 
 .app-features-section__list-item-description {
-
+	margin-top: 0;
+	margin-bottom: 30px;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 }
 
-
-
-
-
-
-.app-features-section__list { 
-	padding-top: 35px;
-	height: 460px;
-	color: black;
-	outline: 3px solid blue;
-	padding-bottom:300px;
-	position: relative;
-	overflow:hidden;
-	background: #f2f2f2;
-}
-
-
 .app-features-section__list:before {
 	position: absolute;
 	content: "";
-	top: 520px;
-	left: 0;
+	top: 481px;
+    left: 0;
 	right: 0;
 	margin: 0 auto;
 	height: 330px;
@@ -88,13 +86,19 @@
 }
 
 .app-features-section__title {
-	padding-top: 50px;
+	padding-top: 14px;
 	box-sizing: border-box;
 }
 
+
 .app-features-section__title h2 {
+	line-height: 41px;
 	font-size:40px;
 	margin: 0;
+}
+
+.app-features-section__title h2:last-child {
+	padding-top: 12px;
 }
 
 .app-features-section__title {
@@ -104,35 +108,45 @@
 }
 
 .app-features-section__list { 
+	min-height: 425px;
 	background: #f2f2f2;
-	height: 490px ;
 	padding:0;
 	display: flex;
+	padding: 73px 81px 0 0;
 	flex-direction: column;
-	
+}
+
+.app-features-section__list-item-description {
+	margin-bottom: 0;
 }
 
 
 .app-features-section__list-item { 
-	padding-left: 300px;
+	padding-left: 284px;
+	margin-bottom: 22px;
+	width: 308px;
 	position: relative;
+}
+
+.app-features-section__list-item-title {
+    margin-top:13px;
+}
+
+.app-features-section__list:before {
+	background: none;
 }
 
 
 .app-features-section__list-item-friends:before {
 	position: absolute;
-	content: "";
-	top: -250px;
-	left: 0;
-	height: 330px;
-	width: 300px; 
-	background: url("../img/iphone-screen-mobile@1x.png") no-repeat ;
+    content: "";
+    top: -348px;
+    left: 13px;
+    height: 545px;
+    width: 300px;
+    background: url(../img/iphone-screen-tablet.png) no-repeat;
 }
 
-
-
-
- 
 .app-features-section__research-effect {
 	display: block;
 	height: 355px;
@@ -142,12 +156,13 @@
 	background: #f2f2f2;
 	color: black;
 	background: #ffffff;
-	background: url("../img/timer.svg") no-repeat;
+	background: url("../img/timer.svg") no-repeat 20px 60px;
 }
 
 .app-features-section__research-effect-title {
 	padding-top: 100px;
-	padding-left: 200px;
+	padding-left: 325px;
+	margin-bottom: 10px;
 	font-family:"Open Sans", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 36px;
@@ -155,11 +170,16 @@
 }
 
 .app-features-section__research-effect-description {
-	padding-left: 200px;
+	padding-left: 325px;
 	font-family:"Open Sans", Arial, sans-serif;
 	font-size: 14px;
 
 	line-height: 24px;
+}
+
+.app-features-section__research-effect-description-link {
+    display: block;
+    margin-top: 9px;
 }
 
 }

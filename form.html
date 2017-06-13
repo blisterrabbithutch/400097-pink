@@ -3,14 +3,15 @@
   <head><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="form-page">
     <header class="main-header main-header--opened-menu">
       <div class="main-header__wrapper">
-        <div class="main-header__logo">
+        <a class="main-header__logo">
           <img src="img/logo-pink-white-mobile.svg" width="77" height="26" alt="Логотип Пинк">
-        </div>
+        </a>
         <div class="main-header__top-sandwich">
           <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
         </div> 
@@ -18,8 +19,8 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
           <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
       </nav> 
@@ -99,16 +100,18 @@
           </div>
           <textarea name="form-feedback" name="textarea-feedback" id="#" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </section>
-        <button type="submit">Отправить форму</button>
-        <div class="form-list__required-fields"><span>*</span>-Обязательные поля</div>
+        <div class="button-required-fields-wrapper">
+          <button type="submit">Отправить форму</button>
+          <div class="form-list__required-fields"><span>*</span>-Обязательные<span class="form-list__required-fields-for-fill">для заполнения</span> поля</div>
+        </div>
       </form>
     </main>
    <footer class="footer-app">
       <a href="index.html" class="footer-app__logo"><img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink" class=""></a>
       <div class="footer-app__social">
         <a href="" class="footer-app__social-button footer-app__social-button--twitter"></a>
-        <a href="" class="footer-app__social-button footer-app__social-button-facebook"></a>
-        <a href="" class="footer-app__social-button footer-app__social-button-googleplay"></a>
+        <a href="" class="footer-app__social-button footer-app__social-button--facebook"></a>
+        <a href="" class="footer-app__social-button footer-app__social-button--googleplay"></a>
       </div>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-app__developed">Разработано <img src="img/logo-htmlacademy.svg" alt="Логотип Академии" class="footer-app__developed-logo"></a>     
     </footer>
