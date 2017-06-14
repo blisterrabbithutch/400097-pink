@@ -1,12 +1,16 @@
 .app-review-section {
+	background: white;
 	text-align: center;
 }
 
 .app-review-section__block-author {
-	margin: 40px 0 0px 0;
+	padding-top: 44px;
+	margin:0;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 30px;
+	color: black;
+	text-align: center;
 }
 
 .app-review-section__block-text {
@@ -14,13 +18,91 @@
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 30px;
+	color:black
+
+}
+
+
+.app-review-section__block.app-review-section__block--hidden {
+	display: none;
+}
+
+.app-review-section__block {
+	height: 275px;
+	.container();
+	outline: 2px solid green;
+}
+
+
+.app-review-section__slider {
+	height: 75px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	.container();
+	outline: 2px solid green;
+}
+
+.app-review-section__block-author-profession {
+	display: none;
+}
+
+
+
+@media @tablet-widths {
+
+.app-review-section__slider {
+	height: 60px;
+	.container();
+	outline: 2px solid green;
+}
+
+.app-review-section__block {
+	display: flex;
+	flex-direction: column;
+}
+
+.app-review-section__block-author {
+	order: 2;
+	padding-top: 23px;
+}
+
+.app-review-section__block-text {
+	margin-top: 90px;
+	font-size: 16px;
+	padding: 0 4% 0 4%;
+}
+
+.app-review-section__block-author-profession {
+	display: block;
+	color: #283645;
+	font-size: 14px;
+	line-height: 30px;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+
+}
+
+@media @desktop-widths {
+
+.app-review-section__block-author {
+	padding-top: 50px;
+}
+
+.app-review-section__block-text {
+	padding-top: 100px;
+}
+
+.app-review-section__block {
+	height: 420px;
+	.container();
+	outline: 2px solid green;
 }
 
 .app-review-section__slider {
-	margin-top: 35px;
-	margin-bottom: 60px;
+	display:none;
 }
+  	
 
-.app-review-section__block--hidden {
-	display: none;
+
 }

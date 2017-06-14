@@ -1,18 +1,23 @@
 .footer-app {
 	text-align:center;
+	outline: 2px solid blue;
+	height: 280px;
+	1display: block;
+	background: white;
 }
 
-.footer-app__logo img {
+.footer-app__logo {
 	padding-top: 30px;
 	margin: 0 auto;
+	height: 55px;
 	text-align:center;
 	display: block;
-	margin-bottom: 45px;
+	margin-bottom: 25px;
 }
 
 .footer-app__social {
-	height: 50px;
-	word-spacing: 20px;
+	height: 60px;
+	word-spacing: 0px;
 	text-align: center;
 	margin-bottom:30px;
 }
@@ -21,18 +26,192 @@
 	margin: 0 auto;
 	height: 50px;
 	width: 50px;
-	background: black;
 	display: inline-block;
+}
+
+.footer-app__social-button--twitter {
+	background: url("../img/icon-twitter.svg") no-repeat 18px 18px;
+	border: 4px solid #e9ebec;
+	border-radius: 50px;
+}
+
+.footer-app__social-button--facebook {
+	background: url("../img/icon-facebook.svg") no-repeat 22px 15px;
+	border: 4px solid #e9ebec;
+	border-radius: 50px;
+}
+
+.footer-app__social-button--googleplay {
+	background: url("../img/icon-youtube.svg") no-repeat 20px 18px;
+	border: 4px solid #e9ebec;
+	border-radius: 50px;
 }
 
 .footer-app__developed {
 	display:inline-block;
-	margin: 10px auto;
+	1margin: 10px auto;
 	text-align: center;
 	vertical-align:middle;
 	height:40px;
+	width: 180px;
 	line-height:40px;
 	text-decoration: none;
 }
 
 
+.index-page .footer-app {
+	display: none;
+}
+
+@media @tablet-widths {
+
+.footer-app {
+	vertical-align: top;
+	word-spacing: 40px;
+	width: 100%;
+	text-align:center;
+	height: 128px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-app__logo {
+	vertical-align: top;
+	margin: 0;
+	margin-top: 30px;
+	height: 55px;
+	width: 150px;
+	padding-top: 10px;
+	text-align: left;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.footer-app__social {
+	    height: 60px;
+    word-spacing: 8px;
+    text-align: center;
+    margin-left: 32px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.footer-app__social-button {
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+
+.footer-app__developed {
+	margin-top: 45px;
+	word-spacing:0;
+	vertical-align: top;
+	display:inline-block;
+	1margin: 10px auto;
+	text-align: left;
+	height:40px;
+	width: 180px;
+	line-height:40px;
+	    padding-left: 28px;
+    width: 160px;
+	text-decoration: none;
+	position: relative;
+}
+
+.footer-app__developed img {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+
+
+
+.index-page .footer-app {
+	display: block;
+}
+  	
+
+}
+
+@media @desktop-widths {
+
+.index-page .footer-app {
+	display: flex;
+}
+
+  	.footer-app {
+  		width: 100%;
+  		text-align: center;
+  		display: block;
+		height: 225px;
+		outline: 2px solid blue;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.footer-app__logo {
+		outline: 2px solid pink;
+		height: 60px;
+		display:inline-block;
+		width: 190px;
+		margin: 0;
+		margin-left: 110px;
+		margin-top: 65px;
+	}
+
+	.footer-app__social {
+		    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 219px;
+    margin-top: 95px;
+	}
+
+
+	.footer-app__developed {
+		    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 170px;
+    margin-right: 125px;
+    margin-top: 95px;
+	}
+
+	.form-page .footer-app {
+		height: 150px;
+	}
+	
+	.form-page .footer-app__logo {
+    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 190px;
+    margin: 0;
+    margin-left: 69px;
+    margin-top: 16px;
+}
+
+	.form-page .footer-app__social {
+    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 219px;
+    margin-right: 80px;
+    margin-left: 71px;
+    margin-top: 27px;
+}
+
+	.form-page .footer-app__developed {
+    outline: 2px solid pink;
+    height: 60px;
+    display: inline-block;
+    width: 170px;
+    margin-right: 40px;
+    margin-top: 36px;
+}
+
+}

@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-    <header class="main-header">
-      <a href="index.html" class="main-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-      </a>
-      <div class="main-header__top-sandwich">
-        <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
-        </nav>
+  <body class="form-page">
+    <header class="main-header main-header--opened-menu">
+      <div class="main-header__wrapper">
+        <a href="index.html" class="main-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="77" height="26" alt="Логотип Пинк">
+        </a>
+        <div class="main-header__top-sandwich">
+          <button class=" main-nav__modal main-nav__modal--close" type="button"></button>
+        </div> 
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+      </nav> 
     </header>
     <main>
       <div class="form-competition-text">
         <p>Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
       <form action="https://echo.htmlacademy.ru/" class="form-list" method="post">
+        <div class="form-list__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span>Пожалуйста, заполните форму ниже:</span>
+        </div>
         <section class="form-list__username">
-          <div class="form-list__username-title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
           <div class="form-list__username-field">
             <label for="username-surname" class="form-list__username-surname">Фамилия</label>
             <input type="text" placeholder="Укажите фамилию*" id="username-surname" required name="username-surname">
@@ -64,6 +71,7 @@
           </div>
         </section>
         <section class="form-list__contacts">
+        <div class="form-list__contacts-title">Контактная информация</div>
           <div class="form-list__contacts-field">
             <label for="contacts-phone" class="form-list__contacts-phone">Номер телефона</label>
             <input type="phone" placeholder="Номер, пожалуйста" id="contacts-phone" name="contacts-phone">
@@ -93,26 +101,36 @@
           </div>
           <textarea name="form-feedback" name="textarea-feedback" id="#" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </section>
-        <button type="submit">Отправить форму</button>
-        <div class="form-list__required-fields"><span>*</span>-Обязательные поля</div>
+        <div class="button-required-fields-wrapper">
+          <button type="submit">Отправить форму</button>
+          <div class="form-list__required-fields"><span>*</span>-Обязательные<span class="form-list__required-fields-for-fill">для заполнения</span> поля</div>
+        </div>
       </form>
     </main>
-    <footer class="footer-app">
+   <footer class="footer-app">
       <a href="index.html" class="footer-app__logo"><img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink" class=""></a>
       <div class="footer-app__social">
         <a href="" class="footer-app__social-button footer-app__social-button--twitter"></a>
-        <a href="" class="footer-app__social-button footer-app__social-button-facebook"></a>
-        <a href="" class="footer-app__social-button footer-app__social-button-googleplay"></a>
+        <a href="" class="footer-app__social-button footer-app__social-button--facebook"></a>
+        <a href="" class="footer-app__social-button footer-app__social-button--googleplay"></a>
       </div>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-app__developed">Разработано <img src="img/logo-htmlacademy.svg" alt="Логотип Академии" class="footer-app__developed-logo"></a>     
     </footer>
     <div class="popup-required-field-failure">
-      <h2>Что-то пошло не так!</h2>
-      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="popup-required-field-failure__title">
+        <h2>Что-то пошло не так!</h2>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <button class="popup-required-field-failure__button" type="button"></button>
     </div>
     <div class="popup-sended-request">
-      <h2>Ваша заявка отправлена</h2>
+      <div class="popup-sended-request__title">
+        <h2>Ваша заявка отправлена</h2>
       <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="popup-sended-request__button">
+        <button type="button"></button>
+      </div>
     </div>
   </body>
 </html>

@@ -1,66 +1,297 @@
-
 .photo-edit-section {
+	background: #f2f2f2;
 	text-align: center;
-	font-size: 14px;
- 	font-family: "Open Sans", Arial, sans-serif;
- 	line-height: 30px;
+
+    padding-bottom: 15px;
 }
 
+
 .photo-edit-section__slogan {
-	padding-top: 50px;
-	padding-bottom: 50px;
+    height: 170px;
+    outline: 2px solid red;
+    margin-bottom: 20px;
+    background: white;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 46px;
+    font-size: 15px;
+    line-height: 29px;
 }
 
 .photo-edit-section__photo {
-	background: #f2f2f2;
-	padding-top: 20px;
+	height: 375px;
+	outline: 2px solid red;
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+
 }
 
 .photo-edit-section__effects {
-	background: #f2f2f2;
-	height: 130px;
-	word-spacing: 20px;
-	padding-top: 20px;
-	border-bottom: 1px solid gray;
-}
-
-.photo-edit-section__effects-button {
-	height: 60px;
-	width: 60px;
-	background: black;
-	display: inline-block;
+	word-spacing: 24px;
+	outline: 2px solid blue;
+	width: 280px;
 	margin: 0 auto;
 }
 
-.photo-edit-section__effects-slider {
-	margin-top: 15px;
+.photo-edit-section__effects-block {
+	height: 50px;
+	display: inline-block;
+	width: 50px;
+	margin: 10px 0 0 0;
+	margin-bottom: 15px;
 }
 
+.photo-edit-section__effects-block__crop {
+	background: url("../img/icon-editor-crop.svg");
+	width: 50px;
+	height: 50px;
+}
+
+.photo-edit-section__effects-block__contrast {
+	background: url("../img/icon-editor-contrast.svg") no-repeat 10px 10px;
+	width: 50px;
+	height: 50px;
+}
+
+.photo-edit-section__effects-block__fill {
+	background: url("../img/icon-editor-fill.svg") 0 5px;
+	width: 50px;
+	height: 50px;
+}
+
+.photo-edit-section__effects-block__slider {
+	display: none;
+}
+
+.photo-edit-section__effects-general-slider {
+    outline: 2px solid green;
+    height: 25px;
+    width: 280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    /* padding-top: 20px; */
+    margin-bottom: 24px;
+}
+
+.photo-edit-section__effects-general-slider input {
+	width: 80%;
+}
+
+.photo-edit-section__slider {
+	height: 55px;
+	outline: 2px solid red;
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+ 
+
 .photo-edit-section__buttons {
-	background: #f2f2f2;
-	padding-top: 40px;
-	height: 150px;
+	width: 280px;
+	box-sizing: border-box;
+	text-align:center;
+    padding-top: 35px;
+	color:#8e1e26;
+	margin: 0 auto;
+	margin-bottom: 40px;
 }
 
 .photo-edit-section__buttons-item {
-	height: 53px;
-	box-sizing: border-box;
-	margin-left:auto;
-	margin-right: auto;
-	width: 80%;
-	margin-bottom: 10px;
-	display:block;
-	color: #d22856;
-	border: 3px solid #d22856;
-	border-radius: 30px;
+	display: block;
 	background: none;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 18px;
+	color: #d22856;
+	border: 4px solid #d22856;
+	height: 58px;
 	font-weight: bold;
+	width: 100%;
+	border-radius: 40px;
+	margin-bottom: 10px;
 }
 
 .photo-edit-section__buttons-cancel {
-	color: #283645;
-	opacity: 0.1;
-	border: 3px solid #283645;
+	color: #dddfe0;
+	border: 4px solid #dddfe0;
 }
+
+
+
+    @media @tablet-widths {
+
+.photo-edit-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.photo-edit-section__effects-block {
+	font-size: 0;
+	1height: 190px;
+	height: 60px;
+	outline: 3px solid green;
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 0 0;
+}
+
+
+
+.photo-edit-section__effects {
+    height: 400px;
+    outline: 2px solid blue;
+    width: 280px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.photo-edit-section__slogan {
+	height: 170px;
+	width: 100%;
+	outline: 2px solid red;
+}
+
+.photo-edit-section__photo {
+	height: 400px;
+	outline: 2px solid green;
+	display: inline-block;
+	width: 300px;
+	margin: 40px 0 0 20px;
+	margin-bottom: 50px;
+	vertical-align: top;
+}
+
+.photo-edit-section__effects {
+	margin: 0;
+	margin-top: 40px;
+}
+
+
+.photo-edit-section__photo img {
+	height: 100%;
+}
+
+
+
+.photo-edit-section__effects-block {
+	display: flex;
+	height: 35px;
+    margin-bottom: 36px;
+}
+
+.photo-edit-section__effects-block__icon {
+	display: inline-block;
+	background-size: 25px;
+    background-repeat:no-repeat;
+    background-position: 15px 5px;
+}
+
+.photo-edit-section__effects-block__slider {
+    display: inline-block;
+}
+
+.photo-edit-section__effects-block__slider input {
+	width: 130%;
+	margin-left: 15px;
+}
+
+.photo-edit-section__slider {
+
+}
+
+.photo-edit-section__buttons {
+    margin-top: 83px;
+    padding-top: 0px;
+    height: 136px;
+
+}
+
+.photo-edit-section__effects-general-slider {
+	display: none;
+}
+ 
+.photo-edit-section__buttons-item {
+    margin-bottom: 21px;
+}
+
+}
+
+	@media @desktop-widths {
+
+.photo-edit-section {
+	justify-content: center;
+}
+
+.photo-edit-section__slogan {
+	height: 170px;
+	outline: 2px solid red;
+	margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-top: 55px;
+    font-size: 19px;
+}
+
+.photo-edit-section__photo {
+	height: 395px;
+	outline: 2px solid red;
+	width: 300px;
+	margin-top: 60px;
+	margin-left: 25px;
+	margin-bottom: 60px;
+
+}
+
+.photo-edit-section__effects {
+	min-height: 200px;
+	outline: 2px solid blue;
+	width: 440px;
+	margin: 60px 0 10px 60px;
+}
+
+.photo-edit-section__effects-block {
+	font-size: 0;
+    height: 50px;
+    outline: 3px solid green;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 0 18px 0;
+}
+
+.photo-edit-section__effects-block input {
+	margin-left: 50px;
+	margin-top: 10px;
+	width: 160%;
+}
+
+.photo-edit-section__effects-block__icon {
+    display: inline-block;
+    margin-left: 25px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.photo-edit-section__buttons-item {
+	    display: inline-block;
+    background: none;
+    height: 58px;
+    font-weight: bold;
+    width: 46%;
+    border-radius: 40px;
+}
+
+.photo-edit-section__slider {
+	display:none;
+}
+
+.photo-edit-section__buttons {
+	height: 60px;
+    width: 410px;
+    margin: 155px 0 50px 30px;
+
+}
+
+  }

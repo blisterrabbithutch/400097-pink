@@ -1,141 +1,576 @@
 .form-list {
-	padding-top: 50px;
+	background:white;
+	text-align:center;
+	.container();
 }
 
-.form-list__username-title {
-	font-size: 14px;
-	line-height: 30px;
-	font-familty: "Open Sans", Arial, sans-serif;
+.form-list__username {
+	.container();
+	outline: 2px solid red;
+}
+
+.form-list__title {
+	height: 160px;
+    outline: 2px solid red;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: black;
+    background: white;
+    width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 45px;
+    padding: 45px 5%;
+}
+
+.form-list__title span {
+	display: none;
+}
+
+.form-list__username-field {
+	outline: 2px solid blue;
+	height: 116px;
+	background: white;
+}
+
+.form-list__username-field:last-child {
 	margin-bottom: 35px;
-	color: #283645;
+}
+
+.form-list__username-field input {
+	padding-left: 18px;
+    box-sizing: border-box;
+	height: 54px;
+	width: 274px;
 }
 
 .form-list__username-field label {
 	display: block;
-	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 30px;
-	margin-bottom: 10px;
-}
-
-.form-list__username-field input {
-	height: 50px;
-	margin-bottom: 25px;
-	width: 90%;
+    color: #d22856;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form-list__achievements {
 	background: #f2f2f2;
+	color: black;
+	.container();
 }
 
 .form-list__achievements-title {
-	padding-top: 40px;
-	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	margin-bottom: 40px;
+    padding-top: 30px;
+    padding: 33px 12%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #d22856;
+    line-height: 21px;
+    height: 80px;
+    font-size: 15px;
 }
 
 .form-list__achievements-field {
-	height: 40px;
-	text-align:center;
-	1margin-top: 40px;
-	padding-bottom: 40px;
+    padding-top: 18px;
+    text-align: left;
+    padding-left: 77px;
+    line-height: 30px;
+    height: 65px;
 }
 
-
-.form-list__achievements-checkbox-label {
-	height: 40px;
-	margin-top: 40px;
+.form-list__achievements-field:last-child {
+	margin-bottom: 5px;
 }
 
 .form-list__contacts {
-	padding-top: 40px;
+	background: white;
 	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	outline: 2px solid blue;
+	box-sizing: border-box;
+    text-transform: uppercase;
+    color: #d22856;
+    line-height: 21px;
+    font-size: 15px;
+	padding-top: 24px;
+	.container();
+}
+
+.form-list__contacts-title {
+	display: none;
 }
 
 .form-list__contacts-field {
-	margin-bottom: 40px;
+	text-align: left;
+	box-sizing: border-box;
+	padding-top: 15px;
+	padding-left: 20px;
+	outline: 2px solid green;
+	height: 116px;
 }
 
-.form-list__contacts-field label {
-	margin-bottom:10px;
-	display:block;
+.form-list__contacts-field:last-child {
+	margin-bottom: 30px;
+}
+
+.form-list__contacts-phone,
+.form-list__contacts-email {
+	display: block;
+	padding-left: 20px;
+	margin-bottom: 10px;
 }
 
 .form-list__contacts-field input {
-	height: 50px;
+	padding-left: 18px;
+    box-sizing: border-box;
+	height: 54px;
+	width: 274px;
 }
+
 
 .form-list__operation-system {
 	background: #f2f2f2;
+	color: black;
+	1height: 325px;
+	.container();
 }
 
 .form-list__operation-system-title {
-	padding-top: 40px;
-	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	margin-bottom: 25px;
+    color: #d22856;
+    box-sizing: border-box;
+    padding-top: 40px;
+    line-height: 19px;
+    height: 95px;
 }
 
 .form-list__operation-system-field {
-	height:40px;
-	padding-bottom:40px;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	color: #283645;
+    box-sizing: border-box;
+    height: 75px;
+    padding-top: 25px;
+    text-align: left;
+    padding-left: 77px;
+}
+
+.form-list__operation-system-field:last-child {
+	height: 100px;
 }
 
 .form-list__feedback {
-	padding-top: 40px;
-	color: #d22856;
-	text-transform: uppercase;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	background:white;
+	min-height: 320px;
+	outline: 2px solid green;
+	.container();
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 .form-list__feedback-title {
-	margin-bottom:20px;
+    color: #d22856;
+    box-sizing: border-box;
+    outline: 2px solid red;
+    padding-top: 33px;
+    height: 75px;
 }
 
 .form-list__feedback textarea {
-	height:200px;
+	padding-top: 15px;	
+	outline: 2px solid red;
+	height: 175px;
 	width: 80%;
+	margin: 0 auto;
 }
 
 .form-list button {
 	background: #2aab6d;
-	height:60px;
-	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	width: 90%;
-	margin: 0 5%;
-	font-family:"Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	border:none;
+	height: 60px;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .form-list__required-fields {
-	padding-top: 35px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: black;
+	box-sizing: border-box;
+	padding-top: 40px;
+	height: 90px;
+}
+
+.form-list__required-fields-for-fill {
+	display:none;
+}
+
+.form-list__required-fields span {
+	color: #d22856;
+}
+
+@media @tablet-widths {
+
+.form-list {
+	display: flex;
+	flex-direction: column;
+}
+
+label.form-list__username-surname,
+label.form-list__username-name,
+label.form-list__username-secondname {
+	display: inline-block;
+	padding-top: 53px;
+	padding-left: 18px;
+}
+
+
+.form-list__username {
+	order: 2;
+	.container();
+	outline: 2px solid red;
+}
+
+.form-list__title {
+	height: 220px;
+	font-size: 18px;
+	padding-top: 92px;
+	line-height: 30px;
+	order: 1;
+	 width: 95%;
+	outline: 2px solid red;
+}
+
+.form-list__title span {
+	display: block;
+}
+
+.form-list__username-field {
+	outline: 2px solid blue;
+	height: 125px;
+	height: 114px;
+	text-align:left;
+}
+
+.form-list__username-field input {
+    padding-left: 18px;
+    box-sizing: border-box;
+        margin-left: 20px;
+    height: 54px;
+    width: 520px;
+}
+
+.form-list__username-field [name="username-name"] {
+	width: 560px;
+}
+
+.form-list__achievements {
+	order: 5;
+	background: white;
+	outline: 2px solid blue;
+	min-height: 620px;
+}
+
+.form-list__achievements-field {
+	width: 350px;
+}
+
+.form-list__achievements-title {
+	padding-top: 30px;
+	height: 40px;
+}
+
+.form-list__achievements-field {
+	padding-left: 130px;
+}
+
+.form-list__contacts {
+	order: 4;
+	outline: 2px solid blue;
+	padding-top: 0;
+	min-height: 335px;
+}
+
+.form-list__contacts-title {
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 15px;
+}
+
+.form-list__contacts-field {
+	display: flex;
+	height: 130px;
+	flex-direction: column;
+	padding: 20px 0 0 80px;
+}
+
+.form-list__contacts-field input {
+	height: 60px;
+	    margin-bottom: 17px;
+	    width: 500px;
+}
+
+.form-list__contacts-phone,
+.form-list__contacts-email {
+	display: block;
+	margin-bottom: 10px;
+	order: 2;
+}
+
+
+
+
+.form-list__operation-system {
+	order: 3;
+	outline: 2px solid blue;
+	.container();
+	background: white;
+	    margin-bottom: 65px;
+}
+
+.form-list__operation-system-title {
+	padding-top: 5px;
+	height: 50px;
+}
+
+.form-list__operation-system-field {
+	padding-left: 127px;
+	width: 300px;
+}
+
+.form-list__feedback {
+	order: 6;
+	min-height: 370px;
+	outline: 2px solid green;
+	.container();
 	text-align: center;
-	margin-bottom:40px;
+	margin-bottom: 42px;
+}
+
+.form-list__feedback-title {
+	padding: 0;
+	margin-top: 40px;
+	height: 30px;
+}
+
+.form-list__feedback textarea {
+	margin: 30px auto;
+	width: 74%;
+}
+
+.button-required-fields-wrapper {
+	order: 7;
+	display: flex;
+	    margin-bottom: 45px;
+	justify-content: space-between;
+}
+
+.button-required-fields-wrapper button {
+	width: 45%;
+	margin:0;
+	margin-left: 20px;
+}
+
+.form-list__required-fields {
+	width: 35%;
+	padding-top: 20px;
+	    padding-left: 20px;
+	height: 60px;
+}
+
+}
+
+
+
+@media @desktop-widths {
+
+.form-list {
+	 display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+
+.form-list__username {
+	.container();
+	outline: 2px solid red;
+}
+
+.form-list__title {
+	height: 150px;
+	width: 880px;
+
+    padding-top: 61px;
+	display: inline;
+	outline: 2px solid red;
+}
+
+.form-list__title span {
+	dispay: inline;
+}
+
+.form-list__username {
+	width: 530px !important;
+	display: inline-block;
+	padding-top: 85px;
+	outline: 2px solid green;
+}
+
+.form-list__username-field {
+	    margin-bottom: 57px;
+}
+
+label.form-list__username-surname,
+label.form-list__username-name,
+label.form-list__username-secondname {
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 18px;
+}
+
+.form-list__username-field input {
+    padding-left: 18px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    height: 54px;
+    width: 330px;
+}
+
+.form-list__username-field [name="username-name"] {
+    width: 375px;
+}
+
+
+.form-list__contacts {
+	min-height: 215px;
+    display: flex;
+        padding: 0 10%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-list__contacts-field {
+	    box-sizing: border-box;
+    padding-top: 20px;
+    outline: 2px solid red;
+    height: 120px;
+	display: flex;
+    width: 464px;
+}
+
+.form-list__contacts-field input {
+    width: 100%;
+}
+
+.form-list__contacts-phone,
+.form-list__contacts-email {
+	order: 1;
+	padding:0;
+}
+
+.form-list__contacts-title {
+    padding-top: 16px;
+    width: 100%;
+}
+
+.form-list__contacts-field:last-child {
+	padding-left: 30px;
+}
+
+.form-list__contacts-field:last-child {
+	padding-left: 30px;
+}
+
+.form-list__contacts-field:last-child input {
+	width: 86%;
+}
+
+.form-list__username-field {
+    display: inline-block;
+    width: 455px;
+    outline: 2px solid blue;
+    margin-left: 55px;
+    height: 62px;
+}
+
+.form-list__achievements {
+	min-height: 290px;
+	text-align:center;
+}
+
+.form-list__achievements-title {
+	margin: 0;
+	height: 40px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.form-list__achievements-field {
+	display: inline-block;
+	width: 215px;
+	vertical-align: top;
+	padding-left: 100px;
+}
+
+.form-list__operation-system {
+	width: 500px;
+	margin-bottom: 0;
+}
+
+.form-list__operation-system-title {
+    padding-top: 72px;
+    text-align: left;
+    height: 50px;
+    padding-left: 53px;
+}
+
+.form-list__operation-system-field {
+    box-sizing: border-box;
+    height: 28px;
+    margin-top: 46px;
+    text-align: left;
+    padding-left: 116px;
+}
+
+.form-list__feedback {
+	min-height: 272px;
+	margin-bottom: 55px;
+}
+
+.form-list__feedback-title {
+	margin-top: 30px;
+}
+
+.form-list__feedback textarea {
+    width: 67%;
+    height: 107px;
+}
+
+.button-required-fields-wrapper {
+    order: 7;
+    display: flex;
+    width: 100%;
+    margin-bottom: 45px;
+    justify-content: space-between;
+
+}
+
+.button-required-fields-wrapper button {
+    width: 25%;
+    margin: 0;
+    margin-left: 130px;
+}
+
+.form-list__required-fields {
+    width: 35%;
+    padding-top: 20px;
+    padding-left: 0;
+    margin-right: 75px;
+    height: 60px;
+}
+
+.form-list__required-fields-for-fill {
+	display:inline;
+	margin-left: 4px;
+	color: black !important;
+}
+
 }
