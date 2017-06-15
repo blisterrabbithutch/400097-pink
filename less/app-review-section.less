@@ -28,11 +28,35 @@
 }
 
 .app-review-section__block {
-	height: 275px;
+	min-height: 275px;
 	.container();
 	outline: 2px solid green;
 }
 
+.app-review-section__slider-button {
+	width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    border: 2px solid #bec2c7;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0;
+    background: #bec2c7;
+    box-sizing: content-box;
+}
+
+.app-review-section__slider-button--active {
+	width: 5px;
+    height: 5px;
+    margin: 0 3px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0;
+    background: #ffffff;
+    box-sizing: content-box;
+}
 
 .app-review-section__slider {
 	height: 75px;
@@ -54,10 +78,13 @@
 	height: 60px;
 	.container();
 	outline: 2px solid green;
+	box-sizing: border-box;
+    padding-top: 23px;
 }
 
 .app-review-section__block {
 	display: flex;
+	padding-top: 6px;
 	flex-direction: column;
 }
 
@@ -86,17 +113,22 @@
 @media @desktop-widths {
 
 .app-review-section__block-author {
-	padding-top: 50px;
+	    padding-top: 26px;
+    font-size: 24px;
+    margin-bottom: 43px;
 }
 
 .app-review-section__block-text {
-	padding-top: 100px;
+	    width: 55%;
+	padding-top: 190px;
 }
 
 .app-review-section__block {
-	height: 420px;
+	min-height: 420px;
 	.container();
 	outline: 2px solid green;
+	justify-content: center;
+    align-items: center;
 }
 
 .app-review-section__slider {

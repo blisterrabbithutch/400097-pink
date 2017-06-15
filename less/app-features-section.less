@@ -112,7 +112,7 @@
 	background: #f2f2f2;
 	padding:0;
 	display: flex;
-	padding: 73px 81px 0 0;
+	padding: 80px 81px 0 0;
 	flex-direction: column;
 }
 
@@ -195,7 +195,13 @@
 	height: 310px;
 	.container();
 	outline: 3px solid blue;
+}
 
+.app-features-section__title h2 {
+    line-height: 52px;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 61px;
 }
 
 .app-features-section__list {
@@ -205,15 +211,40 @@
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	float: none;
 	outline: 3px solid blue;
+	padding: 0;
+	margin: 0;
 }
 
 .app-features-section__list-item { 
 	display: inline-block;
-	padding-left:100px;
 	padding-top:350px;
+	margin: 0;
+	margin-left: 13px;
+	padding-left: 0;
+	padding-right: 0;
 	1background: url("../img/iphone-screen-mobile@1x.png") no-repeat 80px -70px;
+}
+
+.app-features-section__list-item-description {
+    margin-bottom: 0;
+    margin-top: 32px;
+    margin-left: 25px;
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+
+.app-features-section__list-item-title {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    width: 75%;
+    margin-left: 26px;
 }
 
 .app-features-section__list-item-friends:before {

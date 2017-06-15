@@ -27,6 +27,7 @@
       color: black;
       margin: 0;
       margin-top: 15px;
+      font-weight: bold;
       text-align: center;
     }
 
@@ -122,12 +123,22 @@
 
 @media @desktop-widths {
 
-  	.contacts-section__title {
-  		margin: 0;
-      padding-top: 60px;
-  		outline: 2px solid purple;
-  		height: 175px;
+  .contacts-section {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  	.contacts-section__title {
+    order: 1;
+    margin: 0;
+    line-height: 60px;
+    width: 100%;
+    font-size: 50px;
+    padding-top: 151px;
+    outline: 2px solid purple;
+    height: 309px;
   	}
 
   	.contacts-section__block {
@@ -135,13 +146,38 @@
   		height: 120px;
   	}
 
+.contacts-section__number-block {
+  order: 2;
+}
+.contacts-section__email-block {
+  order: 4;
+}
+.contacts-section__adress-block {
+  order: 3;
+}
+
+
+.contacts-section__number-block,
+.contacts-section__email-block,
+.contacts-section__adress-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    outline: 2px solid purple;
+    height: 11s0px;
+    width: 300px;
+}
+
+
   	  	.contacts-section__block:nth-child(3),
   	  	.contacts-section__block:nth-child(4) {
   		display:none;
   	}
 
   	.contacts-section__map {
-		height: 400px;
+      width: 100%;
+      order: 5;
+    height: 510px;
 		outline: 2px solid green;
   	}
 

@@ -184,7 +184,7 @@
 	color: white;
 	text-transform: uppercase;
 	height: 60px;
-	width: 80%;
+    width: 90%;
 	margin: 0 auto;
 }
 
@@ -325,7 +325,7 @@ label.form-list__username-secondname {
 }
 
 .form-list__operation-system-title {
-	padding-top: 5px;
+	padding-top: 10px;
 	height: 50px;
 }
 
@@ -333,6 +333,80 @@ label.form-list__username-secondname {
 	padding-left: 127px;
 	width: 300px;
 }
+
+.form-list__operation-system-field label {
+	position:relative;	
+}
+
+.form-list__operation-system-ios input[type="radio"],
+.form-list__operation-system-android input[type="radio"],
+.form-list__operation-system-winphone input[type="radio"] {
+	display:none;
+}
+
+
+.form-list__operation-system-ios input[type="radio"] + .form-list__operation-system-radio-indicator,
+.form-list__operation-system-android input[type="radio"] + .form-list__operation-system-radio-indicator,
+.form-list__operation-system-winphone input[type="radio"] + .form-list__operation-system-radio-indicator {
+	position: absolute;
+    top: -5px;
+    left: -34px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+
+
+.form-list__operation-system-ios input[type="radio"]:checked + .form-list__operation-system-radio-indicator::after,
+.form-list__operation-system-android input[type="radio"]:checked + .form-list__operation-system-radio-indicator::after,
+.form-list__operation-system-winphone input[type="radio"]:checked + .form-list__operation-system-radio-indicator::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: #8e1e26;
+    border-radius: 50%;
+}
+
+
+
+
+.form-list__achievements-field label {
+	position:relative;	
+}
+
+.form-list__achievements-checkbox-label input[type="checkbox"] {
+	display:none;
+}
+
+.form-list__achievements-checkbox-label input[type="checkbox"] + .form-list__achievements-checkbox-indicator {
+	position: absolute;
+    top: -5px;
+    left: -34px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #e5e5e5;
+}
+
+
+
+.form-list__achievements-checkbox-label input[type="checkbox"]:checked + .form-list__achievements-checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    width: 22px;
+    height: 16px;
+    background: url("../img/icon-yes.svg")
+}
+
+
+
+
 
 .form-list__feedback {
 	order: 6;
