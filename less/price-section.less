@@ -1,6 +1,6 @@
 .price-section {
 	height: 350px;
-	padding-top: 95px;
+	padding-top: 80px;
 	padding-bottom: 30px;
 	overflow: hidden;
 	position: relative;
@@ -11,11 +11,13 @@
 
 .price-section__table {
 	height: 280px;
-    left: -511px;
-    right: 0;
+    left: 50%;
     margin: 0 auto;
+    margin-left: -470px;
     position: absolute;
-    width: 1091px;
+    width: 940px;
+  /*width: 825px; ПРАВИЛЬНЫЙ
+    margin-left: -413px;*/
 }
 
 .price-section__header {
@@ -23,12 +25,20 @@
     background: #283645;
     color: white;
     height: 95px;
-    width: 280px;
+    overflow: hidden;
+    border: 2px solid #e5e5e5;
+}
+
+.price-section__row td:first-child {
+    display: none;
 }
 
 .price-section__cell {
+    width: 33.333333%;
 	height: 60px;
-    padding-left: 20px;
+	    font-size: 14px;
+	text-transform: uppercase;
+    padding-left: 23px;
 	text-align: left;
 	background: white;
 	position: relative;
@@ -37,12 +47,29 @@
 
 .price-section__header-tariff {
 	display: block;
-	padding-top: 10px;
 	box-sizing: border-box;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 30px;
+	position: relative;
+
 	text-transform: uppercase;
+}
+
+.price-section__header-tariff--hit::after {
+    content: "Хит";
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+	top: -6px;
+    left: -38px;
+    transform: rotate(-45deg);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(210, 40, 86);
+    color: rgb(255, 255, 255);
 }
 
 .price-section__header-tariff-cost {
@@ -55,14 +82,15 @@
 }
 
 .price-section__cell--check:after {
-	background: url(../img/icon-yes.svg);
+    background: url(../img/icon-yes.svg);
+    background-size: cover;
     content: "";
     display: block;
     position: absolute;
-    top: 19px;
-    right: 15px;
-    width: 19px;
-    height: 18px;
+    top: 13px;
+    right: 16px;
+    width: 34px;
+    height: 25px;
 }
 
 .price-section__cell--cross:after {
@@ -70,8 +98,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 19px;
-    right: 15px;
+    top: 13px;
+    right: 20px;
     width: 26px;
     height: 27px;
 }
@@ -117,18 +145,26 @@
 
  	.price-section {
  		height: 258px;
+        padding-top: 93px;
  	}
 
  	.price-section__header {
 	height: 75px;
+    width: auto;
 }
 
 .price-section_cell-feature {
 	visibility: hidden;
 }
 
+.price-section__row td:first-child {
+    display: table;
+}
+
 .price-section__cell {
+    padding-left: 13px;
 	height: 43px;
+    text-transform: none;
 }
 
 .price-section__features-list {
@@ -140,11 +176,21 @@
 	display:none;
 }
 
+.price-section__header-tariff {
+    display: block;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
 
 .price-section__table {
-	height: 220px;
-	width: 93%;
-    left: 6px;
+    height: 220px;
+    width: 94%;
+    left: 9px;
     right: 0;
     margin: 0 auto;
     position: absolute;
@@ -156,7 +202,7 @@
     display: block;
     position: absolute;
     top: 17px;
-    right: 60px;
+    right: 70px;
     width: 19px;
     height: 18px;
 }
@@ -166,8 +212,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 5px;
-    right: 55px;
+    top: 10px;
+    right: 65px;
     width: 26px;
     height: 27px;
 }
@@ -178,14 +224,16 @@
  @media @desktop-widths {
 
  	.price-section {
-	.container();
-	padding-top: 150px;
+	
+    padding-top: 143px;
+    min-height: 348px;
+
 }
 
  	.price-section__header {
  	padding-top: 0px;
-	height: 75px;
-	width: auto;
+    height: 98px;
+    width: 25.3%;
 }
 
 .price-section_cell-tariff {
@@ -206,5 +254,32 @@
 	width: 78%;
 }
 
+.price-section__cell {
+    padding-left: 13px;
+    height: 58px;
+    text-transform: none;
+}
+
+.price-section__cell--check:after {
+    background: url(../img/icon-yes.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 108px;
+    width: 19px;
+    height: 18px;
+}
+
+.price-section__cell--cross:after {
+    background: url(../img/icon-no.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 103px;
+    width: 26px;
+    height: 27px;
+}
 
   }

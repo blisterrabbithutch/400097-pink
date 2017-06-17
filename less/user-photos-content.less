@@ -37,7 +37,7 @@
 	1height: 329px;
 	width: 280px;
 	.container();
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 .user-photos-content__item:last-child {
@@ -64,6 +64,16 @@
 	text-align: center;
 }
 
+.user-photos-content__item-quote {
+    text-align: left;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 14px;
+    width: 280px;
+    background: #f2f2f2;
+    color: black;
+}
+
 
 
 .user-photos-content__item-quote-author {
@@ -79,7 +89,7 @@
 	font-weight: bold;
 	font-style: normal;
 	text-transform: none;
-	font-size: 14px;
+	font-size: 15px;
 
 }
 
@@ -168,10 +178,13 @@
 	height: 630px;
 	width: 100%;
 	margin-left:0;
-	margin-bottom: 55px;
+	margin-bottom: 50px;
+	margin-right:0;
 }
 
 .user-photos-content__item {
+	margin-left: 10px;
+    margin-right: 10px;
 	vertical-align: top;
 	display:inline-block;
 	height: 455px;
@@ -180,12 +193,20 @@
 }
 
 .user-photos-content__item-quote {
+	    padding-top: 22px;
+    padding-left: 13px;
+	    padding-top: 22px;
     display: flex;
     width: auto;
     flex-direction: column;
-    padding-left: 10px;
-    justify-content: space-around;
+	justify-content: space-between;
     height: 138px;
+}
+
+.user-photos-content__item-quote-text {
+	padding-left: 10px;
+    margin-bottom: auto;
+
 }
 
 .user-photos-content__item--best .user-photos-content__item-quote {
@@ -198,26 +219,50 @@
     flex-wrap: wrap;
     -ms-flex-pack: justify;
     justify-content: space-between;
+        padding-left: 24px;
+    padding-top: 19px;
+}
+
+.user-photos-content__item-quote-likes {
+	    margin-left: 15px;
+	padding-left:0;
+	    margin-bottom: 8px;
+}
+
+
+.user-photos-content__item--best .user-photos-content__item-quote-text {
+    margin-bottom: 26px;
 }
 
 .user-photos-content__item--best .user-photos-content__item-quote-author {
 	order: 1;
+	height: 25px;
+}
+
+.user-photos-content__item--best .user-photos-content__item-quote-author-name {
+	font-size: 15px;
 }
 
 .user-photos-content__item--best .user-photos-content__item-quote-likes {
 	padding-left: 0;
-	margin-right: 50px;
+	height: 25px;
+    margin-right: 70px;
+	margin-top: 0;
+	margin-bottom: 0;
 	order: 2;
 	position: relative;
 	padding-bottom:0;
+
 }
+
 
 .user-photos-content__item--best .user-photos-content__item-quote-likes:after {
     background: url(../img/icon-heart.svg);
     content: "";
     position: absolute;
     top: 8px;
-	left: 110px;
+    margin-bottom: 0;
+    left: 104px;
     width: 13px;
     height: 12px;
 }
@@ -232,9 +277,7 @@
     height: 12px;
 }
 
-.user-photos-content__item-quote-likes {
-	padding-left:0;
-}
+
 
 .user-photos-content__item--best .user-photos-content__item-quote-text {
 	order: 3;
@@ -247,6 +290,8 @@
 .user-photos-content__item-image img {
 	height: 300px;
 }
+
+
 
 
 }
@@ -262,13 +307,48 @@
 }
 
 .user-photos-content__item--best .user-photos-content__item-quote {
-	width: 940px;
-    height: 105px;
+    width: 940px;
+    height: 92px;
+    padding-top: 0;
     padding-left: 1%;
     box-sizing: border-box;
     padding-right: 1%;
 }
 
+.user-photos-content__item--best .user-photos-content__item-quote-text {
+    -ms-flex-order: 3;
+    order: 3;
+    padding-top: 3px;
+    height: 54px;
+}
+
+.user-photos-content__item--best .user-photos-content__item-quote-author {
+    height: 20px;
+    padding-top: 20px;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.user-photos-content__item--best .user-photos-content__item-quote-likes {
+    padding-left: 0;
+    height: 20px;
+    padding-top: 17px;
+    margin-right: 50px;
+    -ms-flex-order: 2;
+    order: 2;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.user-photos-content__item--best .user-photos-content__item-quote-likes:after {
+    background: url(../img/icon-heart.svg);
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 106px;
+    width: 13px;
+    height: 12px;
+}
 
 
 .user-photos-content .user-photos-content__item-image--best {
@@ -287,16 +367,34 @@
 .user-photos-content__item--best.user-photos-content__item {
 	height: 600px;
 	width: 100%;
-	margin-bottom: 55px;
+    margin-bottom: 51px;
 }
 
 .user-photos-content__item {
 	display:inline-block;
 	height: 555px;
-	margin-bottom: 50px;
+	margin-bottom: 54px;
 	width: 300px;
 	margin-left:10px;
 	margin-right:10px;
+}
+
+.user-photos-content__item-quote {
+	padding-top: 20px;
+	justify-content: space-between;
+}
+
+.user-photos-content__item-quote-text {
+    margin: 0px 4px;
+    margin-bottom: auto;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.user-photos-content__item-quote-likes {
+    padding-left: 0;
+    height: 35px;
+    margin-bottom: 0;
 }
 
 .user-photos-content__item-image {
