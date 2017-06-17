@@ -7,8 +7,7 @@
 
 
 .photo-edit-section__slogan {
-    height: 170px;
-    outline: 2px solid red;
+    height: 177px;
     margin-bottom: 20px;
     background: white;
     color: black;
@@ -20,8 +19,7 @@
 }
 
 .photo-edit-section__photo {
-	height: 375px;
-	outline: 2px solid red;
+	height: 370px;
 	width: 280px;
 	margin: 0 auto;
 	margin-bottom: 35px;
@@ -30,7 +28,6 @@
 
 .photo-edit-section__effects {
 	word-spacing: 24px;
-	outline: 2px solid blue;
 	width: 280px;
 	margin: 0 auto;
 }
@@ -41,6 +38,7 @@
 	width: 50px;
 	margin: 10px 0 0 0;
 	margin-bottom: 15px;
+	position: relative;
 }
 
 .photo-edit-section__effects-block__crop {
@@ -66,7 +64,6 @@
 }
 
 .photo-edit-section__effects-general-slider {
-    outline: 2px solid green;
     height: 25px;
     width: 280px;
     margin: 0 auto;
@@ -74,6 +71,60 @@
     text-align: center;
     /* padding-top: 20px; */
     margin-bottom: 24px;
+    position: relative;
+}
+
+.photo-edit-section__effects-general-slider-line {
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: black;
+    top: 11px;
+    right: 23px;
+    content: "";
+}
+
+.photo-edit-section__effects-general-slider-toggle {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 3px solid #d22856;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 4px;
+    right: 55px;
+    content: "";
+}
+
+.photo-edit-section__effects-block-slider-line {
+    position: absolute;
+    width: 73%;
+    height: 3px;
+    background-color: black;
+    top: 11px;
+    right: 12px;
+    content: "";
+}
+
+.photo-edit-section__effects-block-slider-toggle {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 3px solid #d22856;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 4px;
+    right: 55px;
+    content: "";
+}
+
+.photo-edit-section__effects-block--fill .photo-edit-section__effects-block-slider-toggle {
+	right: 175px;
+}
+
+
+.photo-edit-section__effects-block--contrast .photo-edit-section__effects-block-slider-toggle {
+	right: 105px;
 }
 
 .photo-edit-section__effects-general-slider input {
@@ -82,7 +133,6 @@
 
 .photo-edit-section__slider {
 	height: 55px;
-	outline: 2px solid red;
 	width: 280px;
 	margin: 0 auto;
 	margin-bottom: 40px;
@@ -96,7 +146,7 @@
     padding-top: 35px;
 	color:#8e1e26;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 }
 
 .photo-edit-section__buttons-item {
@@ -131,7 +181,6 @@
 	font-size: 0;
 	1height: 190px;
 	height: 60px;
-	outline: 3px solid green;
 	display: inline-block;
 	width: 100%;
 	margin: 0 0 0 0;
@@ -139,32 +188,35 @@
 
 
 
+
+
 .photo-edit-section__effects {
     height: 400px;
-    outline: 2px solid blue;
+    margin-right: 25px;
+    padding-top: 10px;
     width: 280px;
     margin-top: 40px;
     display: inline-block;
 }
 
 .photo-edit-section__slogan {
-	height: 170px;
-	width: 100%;
-	outline: 2px solid red;
+    height: 170px;
+    width: 100%;
+    padding-left: 14%;
+    padding-right: 14%;
+    font-size: 19px;
 }
 
 .photo-edit-section__photo {
 	height: 400px;
-	outline: 2px solid green;
 	display: inline-block;
 	width: 300px;
-	margin: 40px 0 0 20px;
+	margin: 40px 25px 0 20px;
 	margin-bottom: 50px;
 	vertical-align: top;
 }
 
 .photo-edit-section__effects {
-	margin: 0;
 	margin-top: 40px;
 }
 
@@ -188,6 +240,19 @@
     background-position: 15px 5px;
 }
 
+.photo-edit-section__effects-block__crop {
+	background-position: 10px -2px;
+}
+
+.photo-edit-section__effects-block__contrast {
+	background-position: 16px 3px;
+	background-size: 20px;
+}
+
+.photo-edit-section__effects-block__fill {
+	background-position: 12px 2px;
+}
+
 .photo-edit-section__effects-block__slider {
     display: inline-block;
 }
@@ -202,9 +267,10 @@
 }
 
 .photo-edit-section__buttons {
-    margin-top: 83px;
+    margin-top: 79px;
     padding-top: 0px;
     height: 136px;
+    width: 261px;
 
 }
 
@@ -226,7 +292,6 @@
 
 .photo-edit-section__slogan {
 	height: 170px;
-	outline: 2px solid red;
 	margin-bottom: 10px;
     box-sizing: border-box;
     padding-top: 55px;
@@ -235,7 +300,6 @@
 
 .photo-edit-section__photo {
 	height: 395px;
-	outline: 2px solid red;
 	width: 300px;
 	margin-top: 60px;
 	margin-left: 25px;
@@ -245,20 +309,74 @@
 
 .photo-edit-section__effects {
 	min-height: 200px;
-	outline: 2px solid blue;
 	width: 440px;
-	margin: 60px 0 10px 60px;
+	margin: 50px 6px 10px 35px;
+}
+
+
+.photo-edit-section__effects-block__icon {
+    display: inline-block;
+    margin-left: 25px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+
+.photo-edit-section__effects-block__crop {
+	background-position: 3px -7px;
+}
+
+.photo-edit-section__effects-block__contrast {
+	background-position: 10px 6px;
+	background-size: 35px;
+}
+
+.photo-edit-section__effects-block__fill {
+	background-position: 5px 0px;
 }
 
 .photo-edit-section__effects-block {
 	font-size: 0;
     height: 50px;
-    outline: 3px solid green;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin: 0 0 18px 0;
 }
+
+.photo-edit-section__effects-block-slider-line {
+    position: absolute;
+    width: 65%;
+    height: 3px;
+    background-color: black;
+    top: 19px;
+    right: 32px;
+    content: "";
+}
+
+.photo-edit-section__effects-block-slider-toggle {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 3px solid #d22856;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 12px;
+    right: 232px;
+    content: "";
+}
+
+.photo-edit-section__effects-block--fill .photo-edit-section__effects-block-slider-toggle {
+	right: 55px;
+}
+
+
+.photo-edit-section__effects-block--contrast .photo-edit-section__effects-block-slider-toggle {
+	right: 142px;
+}
+
+
+
 
 .photo-edit-section__effects-block input {
 	margin-left: 50px;
@@ -266,12 +384,12 @@
 	width: 160%;
 }
 
-.photo-edit-section__effects-block__icon {
-    display: inline-block;
-    margin-left: 25px;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
+.photo-edit-section__buttons {
+    margin-top: 86px;
+    padding-top: 0px;
+    height: 136px;
+
+
 }
 
 .photo-edit-section__buttons-item {

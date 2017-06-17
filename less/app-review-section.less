@@ -14,7 +14,7 @@
 }
 
 .app-review-section__block-text {
-	margin: 10px 10px 10px 10px;
+	    margin: 10px 20px 10px 23px;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 30px;
@@ -28,18 +28,40 @@
 }
 
 .app-review-section__block {
-	height: 275px;
+	min-height: 275px;
 	.container();
-	outline: 2px solid green;
 }
 
+.app-review-section__slider-button {
+	width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    border: 2px solid #bec2c7;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0;
+    background: #bec2c7;
+    box-sizing: content-box;
+}
+
+.app-review-section__slider-button--active {
+	width: 5px;
+    height: 5px;
+    margin: 0 3px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0;
+    background: #ffffff;
+    box-sizing: content-box;
+}
 
 .app-review-section__slider {
 	height: 75px;
-	padding-top: 10px;
 	box-sizing: border-box;
+	word-spacing: 6px;
 	.container();
-	outline: 2px solid green;
 }
 
 .app-review-section__block-author-profession {
@@ -53,29 +75,36 @@
 .app-review-section__slider {
 	height: 60px;
 	.container();
-	outline: 2px solid green;
+	box-sizing: border-box;
+    padding-top: 23px;
 }
 
 .app-review-section__block {
 	display: flex;
+	padding-top: 6px;
 	flex-direction: column;
 }
 
 .app-review-section__block-author {
 	order: 2;
+	font-size: 20px;
 	padding-top: 23px;
 }
 
 .app-review-section__block-text {
 	margin-top: 90px;
-	font-size: 16px;
-	padding: 0 4% 0 4%;
+    font-size: 17px;
+    1width: 92%;
+    1padding: 0 2% 0 2%;
+    padding:0;
+    word-spacing: 3.2px;
 }
 
 .app-review-section__block-author-profession {
 	display: block;
 	color: #283645;
-	font-size: 14px;
+	margin-top: 2px;
+	font-size: 13px;
 	line-height: 30px;
 	font-family: "Open Sans", Arial, sans-serif;
 }
@@ -86,21 +115,48 @@
 @media @desktop-widths {
 
 .app-review-section__block-author {
-	padding-top: 50px;
+	    padding-top: 26px;
+    font-size: 24px;
+    margin-bottom: 43px;
 }
 
 .app-review-section__block-text {
-	padding-top: 100px;
+	position: relative;
+	width: 60%;
+	font-size: 18px;
+	padding-top: 190px;
+}
+
+.app-review-section__block-text:before {
+	position: absolute;
+	content: "";
+    top: 75px;
+    left: 75px;
+	right: 0;
+	margin: 0 auto;
+	height: 330px;
+	width: 156px; 
+	background: url("../img/icon-quotes.svg") no-repeat ;
 }
 
 .app-review-section__block {
-	height: 420px;
+	min-height: 420px;
 	.container();
-	outline: 2px solid green;
+	justify-content: center;
+    align-items: center;
 }
 
 .app-review-section__slider {
 	display:none;
+}
+
+.app-review-section__block-author-profession {
+    display: block;
+    color: #283645;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
 }
   	
 

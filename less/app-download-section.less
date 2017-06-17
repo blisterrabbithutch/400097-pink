@@ -7,7 +7,6 @@
 
 .app-download-section__image {
 	height:400px;
-	outline: 3px solid green;
 	.container();
 }
 
@@ -93,7 +92,6 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
-		outline: 2px solid purple;
 
 	}
 
@@ -130,25 +128,26 @@
 		width: 350px;
 		margin-right: 44%;
 		height: 613px;
-		padding-top: 51px;
+    	padding-left: 7px;
+    	padding-top: 57px;
 	}  
 
 	.app-download-section__description-platform-buttons {
     height: 60px;
-    margin-right: 40px;
+    margin-right: 48px;
     text-align: center;
 }
 
 	.app-download-section__description-download-button {
-	box-sizing: border-box;
-    padding: 10px 0px;
+    box-sizing: border-box;
+    padding: 11px 0px;
     margin-top: 4px;
     margin-bottom: 45px;
-    margin-left: 10px;
+    margin-left: 4px;
     margin-right: auto;
     display: block;
     height: 55px;
-    width: 86%;
+    width: 87%;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -160,8 +159,15 @@
 	}
 
 	.app-download-section__description-text-description {
-		margin-top: 30px;
-		padding-left: 0;
+    margin-top: 30px;
+    padding: 5px 0% 17px 2%;
+    color: #ffffff;
+    width: 295px;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
 	}
 
 }
@@ -171,7 +177,8 @@
 	.app-download-section {
 		position: relative;
 		min-height: 850px;
-		.max-width();
+		max-width: 2500px;
+		background-image: url("../img/bg-back-desktop@1x.jpg");
 	}
 
 	.app-download-section__image {
@@ -180,10 +187,10 @@
 	}  
 
 	.app-download-section__image img {
-		z-index:0;
-		margin: 250px 0 0 500px;
-		height: 600px;
-		width: 470px;
+    z-index: 0;
+    margin: 207px 0 0 500px;
+    height: 589px;
+    width: 534px;
 	}  
 
 	.app-download-section__description {
@@ -191,8 +198,59 @@
 		display:inline-block;
 		width: 477px;
 		height: 690px;
-		margin-top:88px;
+		margin-top:0px;
 		padding-top: 200px;
 	}  
+
+	.app-download-section__description-slogan {
+    display: block;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 50px;
+    width: 306px;
+    line-height: 58px;
+    margin-top: 21px;
+    padding-left: 24px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+	}
   
+  .app-download-section__description-download-button {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    margin-top: 54px;
+    margin-bottom: 45px;
+    margin-left: 26px;
+    margin-right: auto;
+    display: block;
+    height: 55px;
+    width: 64%;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 50px;
+  }
+
+	.app-download-section__description-platform-buttons {
+    height: 60px;
+    margin-right: 125px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+.app-download-section__description-text-description {
+    text-align: center;
+    margin-top: 47px;
+    padding-left: 121px;
+    margin-left: 11px;
+    font-size: 18px;
+    width: 70%;
+    padding-left: 0;
+}
+
 }
