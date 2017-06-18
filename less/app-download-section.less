@@ -6,8 +6,8 @@
 }
 
 @media @retina {
-      background-image: url("img/bg-back-mobile@2x.jpg");
-      background-size: 1400px auto;
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 2400px auto;
     }
 
 
@@ -98,7 +98,13 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
+		background-image: url("../img/bg-back-tablet@1x.jpg");
 }
+
+	@media @retina {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 5120px auto;
+    }
 	
 
 
@@ -194,6 +200,12 @@
 		max-width: 2500px;
 		background-image: url("../img/bg-back-desktop@1x.jpg");
 	}
+
+		@media @retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1400px auto;
+    }
+	
 
 	.app-download-section-wrapper {
 		width: 940px !important;

@@ -11,7 +11,11 @@
     <header class="main-header main-header--nojs">
       <div class="main-header__wrapper">
         <div class="main-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" width="77" height="26" alt="Логотип Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="77" height="26" alt="Логотип Пинк">
+           </picture>
         </div>
         <div class="main-header__top-sandwich">
           <button class=" main-nav__modal main-nav__toggle" type="button"></button>
@@ -30,7 +34,11 @@
       <section class="app-download-section">
       <div class="app-download-section-wrapper">
         <div class="app-download-section__image">
-          <img src="img/iphone-hand-mobile@1x.png" alt="Фотография приложения">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+            <img src="img/iphone-hand-mobile@1x.png" alt="Фотография приложения">
+           </picture>
         </div>
         <div class="app-download-section__description">
           <p class="app-download-section__description-slogan">Взгляните<br> на жизнь иначе!</p>
