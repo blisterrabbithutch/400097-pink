@@ -33,5 +33,6 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("img/*.svg").on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
 });

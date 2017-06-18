@@ -75,13 +75,19 @@
         </section>
         <section class="form-list__contacts">
         <div class="form-list__contacts-title">Контактная информация</div>
+        <div class="form-list__contacts-grid">
           <div class="form-list__contacts-field">
             <label for="contacts-phone" class="form-list__contacts-phone">Номер телефона</label>
-            <input type="phone" placeholder="Номер, пожалуйста" id="contacts-phone" name="contacts-phone">
+            <div class="form-list__contacts-field-phone-wrap">
+              <input type="phone" placeholder="Номер, пожалуйста" id="contacts-phone" name="contacts-phone">
+            </div>
           </div>
           <div class="form-list__contacts-field">
             <label for="contacts-email" class="form-list__contacts-email">Адрес почты</label>
-            <input type="email" placeholder="Введите почту*" required id="email" name="contacts-email">
+            <div class="form-list__contacts-field-email-wrap">
+              <input type="email" placeholder="Введите почту*" required id="email" name="contacts-email">
+            </div>
+          </div>
           </div>
         </section>
         <section class="form-list__operation-system">

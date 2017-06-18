@@ -5,6 +5,12 @@
 	background-repeat:no-repeat;
 }
 
+@media @retina {
+      background-image: url("img/bg-back-mobile@2x.jpg");
+      background-size: 1400px auto;
+    }
+
+
 .app-download-section__image {
 	height:400px;
 	.container();
@@ -93,6 +99,13 @@
 		display: flex;
 		justify-content: center;
 }
+	
+
+
+	.app-download-section-wrapper {
+		width: 620px;
+	}
+
 
 	.app-download-section__image {
 		position: absolute;
@@ -100,10 +113,10 @@
 	}  
 
 	.app-download-section__image img {
-		z-index:0;
-		margin: 68px 0 0 180px;
-		height: 550px;
-		width: 470px;
+	    z-index: 0;
+    margin: 77px 0 0 171px;
+    height: 500px;
+    width: 450px;
 	}  
 
 	.app-download-section__description-slogan {
@@ -119,21 +132,23 @@
 	}
 
 	.app-download-section__description {
-		box-sizing: border-box;
-		z-index:2;
-		justify-content: flex-start;
-		display:inline-block;
-		background: none;
-		width: 350px;
-		margin-right: 44%;
-		height: 613px;
-    	padding-left: 7px;
-    	padding-top: 57px;
+	box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: inline-block;
+    background: none;
+    width: 350px;
+    margin-right: 44%;
+    height: 613px;
+    padding-left: 1px;
+    padding-top: 56px;
 	}  
 
 	.app-download-section__description-platform-buttons {
     height: 60px;
-    margin-right: 48px;
+    margin-right: 64px;
     text-align: center;
 }
 
@@ -142,7 +157,7 @@
     padding: 11px 0px;
     margin-top: 4px;
     margin-bottom: 45px;
-    margin-left: 4px;
+    margin-left: -3px;
     margin-right: auto;
     display: block;
     height: 55px;
@@ -180,6 +195,10 @@
 		background-image: url("../img/bg-back-desktop@1x.jpg");
 	}
 
+	.app-download-section-wrapper {
+		width: 940px !important;
+	}
+
 	.app-download-section__image {
 		
 		height: 845px;
@@ -187,7 +206,7 @@
 
 	.app-download-section__image img {
     z-index: 0;
-    margin: 207px 0 0 500px;
+    margin: 207px 0 0 370px;
     height: 589px;
     width: 534px;
 	}  
@@ -198,6 +217,7 @@
 		width: 477px;
 		height: 690px;
 		margin-top:0px;
+		margin-left: -28px;
 		padding-top: 200px;
 	}  
 

@@ -422,13 +422,16 @@ label.form-list__username-secondname {
 }
 
 .form-list__achievements-title {
+    position: relative;
+    width: 437px;
+    background: white;
+    margin: 0 auto;
+    padding: 0;
     font-size: 14px;
     padding-top: 10px;
     font-family: "Open Sans", Arial, sans-serif;
     height: 40px;
-    margin: 0;
-        margin-bottom: 15px;
-
+    margin-bottom: 15px;
 }
 
 .form-list__achievements-field {
@@ -462,6 +465,10 @@ padding-left: 138px;
 }
 
 .form-list__contacts-title {
+    position: relative;
+    margin: 0 auto;
+    width: 270px;
+    background: white;
     display: block;
     padding-top: 5px;
     font-size: 14px;
@@ -476,10 +483,38 @@ padding-left: 138px;
     padding: 22px 0 0 0px;
 }
 
+
+
 .form-list__contacts-field input {
 	height: 60px;
+        border: 2px solid #e5e5e5;
 	    margin-bottom: 17px;
 	    width: 500px;
+}
+
+.form-list__contacts-field-phone-wrap,
+.form-list__contacts-field-email-wrap {
+    position: relative;
+}
+
+.form-list__contacts-field-phone-wrap:after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    top: 0;
+    right: 74px;
+    background: #e5e5e5 url("../img/phone.png") no-repeat 20px 20px;
+}
+
+.form-list__contacts-field-email-wrap:after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    top: 0;
+    right: 72px;
+    background: #e5e5e5 url("../img/mail.png") no-repeat 22px 22px;
 }
 
 .form-list__contacts-phone,
@@ -509,6 +544,7 @@ padding-left: 138px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     margin: 0 auto;
+    position: relative;
     text-align: center;
     z-index: 30;
     height: 50px;
@@ -545,12 +581,16 @@ padding-left: 138px;
 }
 
 .form-list__feedback-title {
-	padding: 0;
-	font-family: "Open Sans", Arial, sans-serif;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
     margin-top: 7px;
-	text-transform: uppercase;
-	height: 30px;
-	font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+    height: 30px;
+    width: 250px;
+    margin: 7px auto;
+    font-size: 14px;
+    background-color: white;
 }
 
 .form-list__feedback textarea {
@@ -662,6 +702,26 @@ label.form-list__username-secondname {
     margin-left: 70px;
 }
 
+.form-list__contacts-field-phone-wrap:after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    top: 0;
+    right: 19px;
+    background: #e5e5e5 url("../img/phone.png") no-repeat 20px 20px;
+}
+
+.form-list__contacts-field-email-wrap:after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    top: 0;
+    right: 72px;
+    background: #e5e5e5 url("../img/mail.png") no-repeat 22px 22px;
+}
+
 .form-list__contacts-phone {
 	font-family: "Open Sans", Arial, sans-serif;
 	text-indent: 69px;
@@ -677,12 +737,16 @@ label.form-list__username-secondname {
 
 .form-list__contacts-title {
     padding-top: 2px;
-    width: 100%;
+    width: 260px;
+}
+
+.form-list__contacts-grid {
+    display: flex;
 }
 
 .form-list__contacts-field:last-child {
-	padding-left: 30px;
-	width: 462px;
+    padding-left: 63px;
+    width: 500px;
 }
 
 
@@ -721,7 +785,7 @@ label.form-list__username-secondname {
 .form-list__achievements-title {
     margin: 0;
     height: 40px;
-    width: 100%;
+    width: 436px;
     text-align: center;
     padding-top: 11px;
     font-family: "Open Sans", Arial, sans-serif;
@@ -802,6 +866,7 @@ label.form-list__username-secondname {
 
 .form-list__feedback textarea {
 	width: 83%;
+    margin-top: 20px;
     height: 120px;
 }
 
