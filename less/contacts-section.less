@@ -1,5 +1,6 @@
   	.contacts-section {
       background: white;
+      text-align: center;
   	}
 
   	.contacts-section__title {
@@ -44,6 +45,27 @@
       color: #d22856;
     }
 
+    .contacts-section__email-block {
+      height: 54px;
+      margin-bottom: 25px;
+    }
+
+    .contacts-section__email {
+      width: 245px;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    .contacts-section__email:hover {
+      cursor: pointer;
+      color: black;
+      border-bottom: 2px solid black;
+    }
+
+    .contacts-section__email:active {
+      color: #ced0d2;
+      border-bottom: 2px solid #ced0d2;
+    }
 
   	  	.contacts-section__block:nth-child(4) {
   		height: 130px;
@@ -103,12 +125,17 @@
     .contacts-section {
       background: white;
       text-align: center;
+          display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     }
 
   	.contacts-section__title {
       box-sizing: border-box;
     padding-top: 48px;
     font-size: 41px;
+    width: 100%;
     line-height: 49px;
     margin: 0;
     height: 170px;
@@ -120,16 +147,24 @@
     display: inline-block;
     vertical-align: top;
     height: 100px;
-    width: 300px;
+    width: 295px;
     padding-top: 1px;
     padding-left: 10px;
     padding-right: 10px;
 }
   	
 
+    .contacts-section__number,
+    .contacts-section__email,
+    .contacts-section__adress, {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
       .contacts-section__adress-block {
         margin-top: 4px;
         margin-bottom: 30px;
+            width: 100%;
       }
 
  .contacts-section__adress-title,
@@ -138,10 +173,14 @@
   margin-bottom: 5px;
  }
 
+.contacts-section__email-block {
+    margin-bottom: 0px;
+}
 
   	.contacts-section__map {
       margin:0;
 		height: 375px;
+        width: 100%;
   	}
 
         .contacts-section__map:after {
@@ -194,6 +233,8 @@
 }
 .contacts-section__adress-block {
   order: 3;
+      width: 298px !important;
+      /* чтобы не писать лишний селектор перебивающий составной выше*/
 }
 
  .contacts-section__adress-title,

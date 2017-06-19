@@ -44,6 +44,16 @@
     box-sizing: content-box;
 }
 
+.app-review-section__slider-button--unactive:hover {
+	background: #7e868f;
+	border: 2px solid #7e868f;
+}
+
+.app-review-section__slider-button--unactive:active {
+	background: #e9ebec;
+	border: 2px solid #e9ebec;
+}
+
 .app-review-section__slider-button--active {
 	width: 5px;
     height: 5px;
@@ -68,7 +78,13 @@
 	display: none;
 }
 
+.app-review-section__arrow-left {
+	display: none;
+}
 
+.app-review-section__arrow-right {
+	display: none;
+}
 
 @media @tablet-widths {
 
@@ -98,6 +114,7 @@
     1padding: 0 2% 0 2%;
     padding:0;
     word-spacing: 3.2px;
+    position: relative;
 }
 
 .app-review-section__block-author-profession {
@@ -113,6 +130,10 @@
 }
 
 @media @desktop-widths {
+
+.app-review-section__wrapper {
+	position: relative;
+}
 
 .app-review-section__block-author {
 	    padding-top: 26px;
@@ -157,6 +178,40 @@
     font-size: 16px;
     line-height: 30px;
     font-family: "Open Sans", Arial, sans-serif;
+}
+
+.app-review-section__arrow-left {
+	display: block;
+}
+
+.app-review-section__arrow-right {
+	display: block;
+}
+
+.app-review-section__arrow-left button {
+	display: block;
+	position: absolute;
+    top: 314px;
+    left: 130px;
+	height: 40px;
+	width: 40px;
+	border:none;
+	background-color: none;
+	background: url("../img/icon-review-arrow-left.svg") no-repeat;
+}
+
+.app-review-section__arrow-right button {
+	display: block;
+	position: absolute;
+	display: block;
+	position: absolute;
+	top: 313px;
+    right: 113px;
+	height: 40px;
+	border:none;
+	width: 40px;
+	background-color: none;
+	background: url("../img/icon-review-arrow-right.svg") no-repeat
 }
   	
 

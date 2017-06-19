@@ -28,10 +28,27 @@
     border-top: 1px solid #485461;
 }
 
+
+
 .main-nav__list-item a {
   color: white;
   text-decoration:none;
 }
+
+
+.main-nav__list-item a:hover {
+    color: #d22856;
+}
+
+.main-nav__list-item a:active {
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+.main-nav__list-active {
+  border-bottom: 2px solid white;
+}
+
 
 @media @mobile-widths-only {
 
@@ -148,6 +165,13 @@
   display: inline-block;
   color: white;
   text-decoration:none;
+}
+
+.main-nav__list-item a {
+    color: white;
+    display: inline-block;
+    height: 35px;
+    text-decoration: none;
 }
 
 .main-nav__list li {

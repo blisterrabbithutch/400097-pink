@@ -155,7 +155,7 @@
 	background: #f2f2f2;
 	padding:0;
 	display: flex;
-	padding: 80px 81px 0 0;
+	padding: 52px 81px 0 0;
 	flex-direction: column;
 }
 
@@ -191,11 +191,8 @@
     z-index: 1000;
     height: 545px;
     width: 300px;
-    background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat;
-    @media @retina {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png");
-      background-size:cover;
-    }
+    background-image: url(../img/iphone-feature-screen-tablet@1x.png);
+    background-repeat: no-repeat;
 }
 
 
@@ -211,7 +208,7 @@
 }
 
 .app-features-section__research-effect-title {
-	padding-top: 97px;
+	padding-top: 98px;
     padding-left: 329px;
     margin-bottom: 10px;
 	font-family:"Open Sans", Arial, sans-serif;
@@ -329,11 +326,8 @@
 	left: -6px;
 	height: 330px;
 	width: 300px; 
-	background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat ;
-	@media @retina {
-      background-image: url("../img/iphone-screen-3-desktop@2x.png");
-      background-size:cover;
-    }
+	background-image: url("../img/iphone-screen-3-desktop@1x.png");
+	background-repeat: no-repeat;
 }
 
 .app-features-section__list-item-world:before {
@@ -344,7 +338,8 @@
 	left: -6px;
 	height: 330px;
 	width: 300px; 
-	background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat ;
+	background-image: url("../img/iphone-screen-2-desktop@1x.png");
+	background-repeat: no-repeat;
 	@media @retina {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
           background-size: cover;
@@ -359,7 +354,8 @@
 	left: -6px;
 	height: 330px;
 	width: 300px; 
-	background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat ;
+	background-image: url("../img/iphone-screen-1-desktop@1x.png");
+	background-repeat: no-repeat;
 	@media @retina {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
           background-size: cover;
@@ -392,7 +388,7 @@
 }
 
 .app-features-section__research-effect-description {
-    padding-top: 11px;
+    padding-top: 20px;
     padding-left: 345px;
     text-align: left;
     margin: 0 auto;
@@ -422,4 +418,15 @@
 
 
 
+}
+
+
+
+@media @desktop-widths and @retina {
+.app-features-section__list-item-friends:before {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size:cover;
+      height: 299px;
+    width: 236px;
+    }
 }
