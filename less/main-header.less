@@ -24,11 +24,21 @@
   padding-top: 22px;
 }
 
+.main-header__logo-tablet {
+  display: none;
+}
+
+.main-header__logo-desktop {
+  display: none;
+}
 
 
+.main-header__logo-mobile:hover g path {
+  fill: #d22856;
+}
 
-.main-header__logo picture img:hover {
-  fill: red;
+.main-header__logo-mobile:active g path {
+  fill:#6c7682;
 }
 
 
@@ -71,18 +81,38 @@
   }
 
   .main-header__logo {
-    background: url(../img/logotype-white-tablet.png);
-    width: 147px;
-    margin-left: 7px;
+    width: 199px;
+    margin-left: 2px;
     height: 40px;
-    margin-top: -12px;
+    margin-top: -52px;
   }
+
+
+  .main-header__logo-tablet {
+  display: block;
+}
+  .main-header__logo-mobile {
+  display: none;
+}
+
+.main-header__logo-desktop {
+  display: none;
+}
+
 
   .main-header__top-sandwich {
   margin-top: 8px;
   margin-left: 431px;
 }
- 
+
+svg:hover .main-header__logo-tablet-group path {
+  fill: #d22856;
+}
+
+svg:active .main-header__logo-tablet-group path {
+  fill:#6c7682;
+}
+
 
 }
 
@@ -110,13 +140,39 @@
     width: 200px;
     background: none;
     height: 50px;
+    position: relative;
+    z-index: 500;
   }
 
 .main-header__top-sandwich {
     display:none !important;
+    /* иначе не работает ( */
 }
 
   .main-header__logo {
-    margin-top: 0px;
+    margin-top: -20px;
+    margin-left: 3px;
   }
+
+
+  .main-header__logo-tablet {
+  display: none;
+}
+  .main-header__logo-mobile {
+  display: none;
+}
+
+.main-header__logo-desktop {
+  display: block;
+}
+
+.main-header__logo-desktop:hover g path {
+  fill: #d22856;
+}
+
+.main-header__logo-desktop:active g path {
+  fill:#6c7682;
+}
+
+
 }
