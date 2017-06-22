@@ -1,39 +1,32 @@
 .app-review-section {
-	background: white;
-	text-align: center;
+    background: white;
+    text-align: center;
 }
-
 .app-review-section__block-author {
-	padding-top: 44px;
-	margin:0;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	color: black;
-	text-align: center;
+    padding-top: 44px;
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    text-align: center;
 }
-
 .app-review-section__block-text {
-	    margin: 10px 20px 10px 23px;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 30px;
-	color:black
-
+    margin: 10px 20px 10px 23px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: black
 }
-
-
 .app-review-section__block.app-review-section__block--hidden {
-	display: none;
+    display: none;
 }
-
 .app-review-section__block {
-	min-height: 275px;
-	.container();
+    min-height: 275px;
+    .container();
 }
-
 .app-review-section__slider-button {
-	width: 4px;
+    width: 4px;
     height: 4px;
     margin: 0 3px;
     border: 2px solid #bec2c7;
@@ -43,19 +36,16 @@
     background: #bec2c7;
     box-sizing: content-box;
 }
-
 .app-review-section__slider-button--unactive:hover {
-	background: #7e868f;
-	border: 2px solid #7e868f;
+    background: #7e868f;
+    border: 2px solid #7e868f;
 }
-
 .app-review-section__slider-button--unactive:active {
-	background: #e9ebec;
-	border: 2px solid #e9ebec;
+    background: #e9ebec;
+    border: 2px solid #e9ebec;
 }
-
 .app-review-section__slider-button--active {
-	width: 5px;
+    width: 5px;
     height: 5px;
     margin: 0 3px;
     border: 3px solid black;
@@ -66,155 +56,129 @@
     background: #ffffff;
     box-sizing: content-box;
 }
-
 .app-review-section__slider {
-	height: 65px;
-	box-sizing: border-box;
-	word-spacing: 6px;
-	.container();
+    height: 65px;
+    box-sizing: border-box;
+    word-spacing: 6px;
+    .container();
 }
-
 .app-review-section__block-author-profession {
-	display: none;
+    display: none;
 }
-
 .app-review-section__arrow-left {
-	display: none;
+    display: none;
 }
-
 .app-review-section__arrow-right {
-	display: none;
+    display: none;
 }
-
 @media @tablet-widths {
-
-.app-review-section__slider {
-	height: 60px;
-	.container();
-	box-sizing: border-box;
-    padding-top: 23px;
+    .app-review-section__slider {
+        height: 60px;
+        .container();
+        box-sizing: border-box;
+        padding-top: 23px;
+    }
+    .app-review-section__block {
+        display: flex;
+        padding-top: 6px;
+        flex-direction: column;
+    }
+    .app-review-section__block-author {
+        order: 2;
+        font-size: 20px;
+        padding-top: 23px;
+    }
+    .app-review-section__block-text {
+        margin-top: 90px;
+        font-size: 17px;
+        1width: 92%;
+        1padding: 0 2% 0 2%;
+        padding: 0;
+        word-spacing: 3.2px;
+        position: relative;
+    }
+    .app-review-section__block-author-profession {
+        display: block;
+        color: #283645;
+        margin-top: 2px;
+        font-size: 13px;
+        line-height: 30px;
+        font-family: "Open Sans", Arial, sans-serif;
+    }
 }
-
-.app-review-section__block {
-	display: flex;
-	padding-top: 6px;
-	flex-direction: column;
-}
-
-.app-review-section__block-author {
-	order: 2;
-	font-size: 20px;
-	padding-top: 23px;
-}
-
-.app-review-section__block-text {
-	margin-top: 90px;
-    font-size: 17px;
-    1width: 92%;
-    1padding: 0 2% 0 2%;
-    padding:0;
-    word-spacing: 3.2px;
-    position: relative;
-}
-
-.app-review-section__block-author-profession {
-	display: block;
-	color: #283645;
-	margin-top: 2px;
-	font-size: 13px;
-	line-height: 30px;
-	font-family: "Open Sans", Arial, sans-serif;
-}
-
-
-}
-
 @media @desktop-widths {
-
-.app-review-section__wrapper {
-	position: relative;
-}
-
-.app-review-section__block-author {
-	    padding-top: 26px;
-    font-size: 24px;
-    margin-bottom: 43px;
-}
-
-.app-review-section__block-text {
-	position: relative;
-	width: 60%;
-	font-size: 18px;
-	padding-top: 177px;
-	margin-top:0;
-}
-
-.app-review-section__block-text:before {
-	position: absolute;
-	content: "";
-    top: 58px;
-    left: 75px;
-	right: 0;
-	margin: 0 auto;
-	height: 330px;
-	width: 156px; 
-	background: url("../img/icon-quotes.svg") no-repeat ;
-}
-
-.app-review-section__block {
-	min-height: 413px;
-	.container();
-	justify-content: center;
-    align-items: center;
-}
-
-.app-review-section__slider {
-	display:none;
-}
-
-.app-review-section__block-author-profession {
-    display: block;
-    color: #283645;
-    margin-top: 2px;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: "Open Sans", Arial, sans-serif;
-}
-
-.app-review-section__arrow-left {
-	display: block;
-}
-
-.app-review-section__arrow-right {
-	display: block;
-}
-
-.app-review-section__arrow-left button {
-	display: block;
-	position: absolute;
-    top: 314px;
-    left: 130px;
-	height: 40px;
-	width: 40px;
-	border:none;
-	background-color: none;
-	background: url("../img/icon-review-arrow-left.svg") no-repeat;
-}
-
-.app-review-section__arrow-right button {
-	display: block;
-	position: absolute;
-	display: block;
-	position: absolute;
-	top: 313px;
-    right: 113px;
-	height: 40px;
-	border:none;
-	width: 40px;
-	background-color: none;
-	background: url("../img/icon-review-arrow-right.svg") no-repeat
-}
-  	
-
-
+    .app-review-section__wrapper {
+        position: relative;
+    }
+    .app-review-section__block-author {
+        padding-top: 26px;
+        font-size: 24px;
+        margin-bottom: 43px;
+    }
+    .app-review-section__block-text {
+        position: relative;
+        width: 75%;
+        line-height: 30px;
+        font-size: 18px;
+        padding-top: 180px;
+        margin-top: 0;
+    }
+    .app-review-section__block-text:before {
+        position: absolute;
+        content: "";
+        top: 58px;
+        left: 75px;
+        right: 0;
+        margin: 0 auto;
+        height: 330px;
+        width: 156px;
+        background: url("../img/icon-quotes.svg") no-repeat;
+    }
+    .app-review-section__block {
+        min-height: 413px;
+        .container();
+        justify-content: center;
+        align-items: center;
+    }
+    .app-review-section__slider {
+        display: none;
+    }
+    .app-review-section__block-author-profession {
+        display: block;
+        color: #283645;
+        margin-top: 2px;
+        font-size: 16px;
+        line-height: 30px;
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+    .app-review-section__arrow-left {
+        display: block;
+    }
+    .app-review-section__arrow-right {
+        display: block;
+    }
+    .app-review-section__arrow-left button {
+        display: block;
+        position: absolute;
+        top: 215px;
+        left: 10px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-color: none;
+        background: url("../img/icon-review-arrow-left.svg") no-repeat;
+    }
+    .app-review-section__arrow-right button {
+        display: block;
+        position: absolute;
+        display: block;
+        position: absolute;
+        top: 213px;
+        right: -7px;
+        height: 40px;
+        border: none;
+        width: 40px;
+        background-color: none;
+        background: url("../img/icon-review-arrow-right.svg") no-repeat
+    }
 }
