@@ -2,24 +2,23 @@
     height: 350px;
     padding-top: 90px;
     padding-bottom: 30px;
+    z-index: 2;
     overflow: hidden;
     position: relative;
     background-color: #f2f2f2;
     color: black;
 }
-.price-section:after {
-    position: absolute;
-    content: "";
-    top: -12px;
-    right: 0;
+.price-section:before {
+    content: '';
     width: 100%;
-    /* transform: rotate(180deg); */
-    
-    height: 37px;
-    background: url(../img/bg-triangle-white2.svg);
-    background-size: cover;
-    margin: 0 auto;
-    background-repeat: no-repeat;
+    height: 259px;
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: -257px;
+    left: 0;
+    transform-origin: right top;
+    transform: skewy(-5deg);
 }
 .price-section__table {
     height: 280px;
@@ -261,6 +260,7 @@
     .price-section__table {
         height: 275px;
         width: 98%;
+        .container();
     }
     .price-section__cell {
         padding-left: 17px;

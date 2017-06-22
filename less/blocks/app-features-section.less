@@ -4,16 +4,22 @@
     background: white;
 }
 .app-features-section:before {
-    content: '';
-    width: 100%;
-    height: 259px;
     position: absolute;
-    background: #f2f2f2;
-    z-index: 1;
-    top: 250px;
+    content: "";
+    top: 218px;
     left: 0;
-    transform-origin: left bottom;
-    transform: skewy(-6deg);
+    /* width: 100%; */
+    
+    z-index: 500;
+    /* transform: rotate(180deg); */
+    
+    height: 37px;
+    background: url(../img/bg-triangle-white.svg);
+    background-size: cover;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-right: 100vw solid #f2f2f2;
+    border-top: 8vw solid transparent;
 }
 .app-features-section__title {
     height: 245px;
@@ -37,7 +43,6 @@
 .app-features-section__list {
     padding-top: 10px;
     margin-top: 27px;
-    z-index: 2;
     text-align: center;
     color: black;
     padding-right: 17px;
@@ -88,16 +93,21 @@
         background: white;
     }
     .app-features-section:before {
-        content: '';
-        width: 100%;
-        height: 259px;
         position: absolute;
-        background: #f2f2f2;
-        z-index: 1;
-        top: 304px;
+        content: "";
+        top: 213px;
         left: 0;
-        transform-origin: left bottom;
-        transform: skewy(175deg);
+        /* width: 100%; */
+        
+        z-index: 500;
+        transform: rotate(180deg);
+        height: 38px;
+        background: url(../img/bg-triangle-white2.svg);
+        background-size: cover;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        border-right: 100vw solid white;
+        border-top: 8vw solid transparent;
     }
     .app-features-section__title {
         padding-top: 10px;
@@ -121,10 +131,7 @@
         background: #f2f2f2;
         padding: 0;
         display: flex;
-        margin-top: 73px;
-        z-index: 2;
-        padding: 7px 81px 0 0;
-        padding: 8px 81px 0 0;
+        padding: 52px 81px 0 0;
         flex-direction: column;
     }
     .app-features-section__list-item-description {
@@ -197,24 +204,26 @@
         background-color: #f2f2f2;
     }
     .app-features-section:before {
-        display: block;
-        content: '';
-        width: 100%;
-        height: 259px;
         position: absolute;
-        background: white;
-        z-index: 3;
-        top: 75px;
+        content: "";
+        top: 285px;
         left: 0;
-        transform-origin: right top;
-        transform: skewy(175deg);
+        /* width: 100%; */
+        
+        z-index: 500;
+        transform: rotate(180deg);
+        height: 38px;
+        background: url(../img/bg-triangle-white2.svg);
+        background-size: cover;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        border-right: 100vw solid white;
+        border-top: 8vw solid transparent;
     }
     .app-features-section__title {
         min-height: 330px;
         width: 100%;
         min-width: 100%;
-        z-index: 4;
-        position: relative;
         .container();
     }
     .app-features-section__title h2 {
@@ -234,12 +243,10 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        overflow: hidden;
         justify-content: center;
         float: none;
         padding: 0 1.3%;
         margin: 0;
-        .container();
     }
     .app-features-section__list-item {
         display: inline-block;
