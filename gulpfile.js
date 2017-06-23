@@ -84,6 +84,7 @@ server.reload();
 done();
 });
 
-gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+gulp.watch("less/**/*.less", ["style"]);
+gulp.watch("img/*.svg").on("change", server.reload);
 gulp.watch("*.html", ["html:update"]);
 });
