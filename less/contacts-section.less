@@ -51,6 +51,9 @@
     padding: 0;
     margin: 0 auto;
 }
+.contacts-section__adress {
+    margin-bottom: 44px;
+}
 .contacts-section__email:hover {
     cursor: pointer;
     color: black;
@@ -73,18 +76,16 @@
     height: 214px;
 }
 .contacts-section__map:after {
-    position: absolute;
-    content: "";
-    top: 0px;
     right: 0;
-    width: 100%;
-    /* transform: rotate(180deg); */
-    
-    height: 37px;
-    background: url(../img/bg-triangle-white-footer.svg);
-    background-size: contain;
     margin: 0 auto;
     background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 33%;
+    background: url(../img/bg-triangle-white-footer.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
 }
 .contacts-section__map iframe {
     border: 0px none;
@@ -160,16 +161,16 @@ iframe .gm-style .place-card-large {
         width: 100%;
     }
     .contacts-section__map:after {
-        position: absolute;
-        content: "";
-        top: 0px;
         right: 0;
-        width: 100%;
-        height: 60px;
-        background: url(../img/bg-triangle-white-footer.svg);
-        background-size: contain;
-        margin: 0 auto;
-        background-repeat: no-repeat;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 43%;
+    background: url(../img/bg-triangle-white-footer.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
     }
 }
 @media @desktop-widths {
@@ -225,20 +226,21 @@ iframe .gm-style .place-card-large {
         display: none;
     }
     .contacts-section__map {
+        margin-top: 20px;
         width: 100%;
         order: 5;
         height: 505px;
     }
     .contacts-section__map:after {
-        position: absolute;
-        content: "";
-        top: -3px;
         right: 0;
-        width: 100%;
-        height: 119px;
-        background: url(../img/bg-triangle-white-footer.svg);
-        background-size: contain;
-        margin: 0 auto;
-        background-repeat: no-repeat;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 53%;
+    background: url(../img/bg-triangle-white-footer.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
     }
 }

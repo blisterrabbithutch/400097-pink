@@ -39,6 +39,12 @@
     color: #d22856;
     width: 274px;
 }
+.form-list__username-field input:hover {
+    border: 2px solid black;
+}
+.form-list__username-field input:active {
+    border: 2px solid #d22856;
+}
 .form-list__username-field label {
     display: block;
     color: #d22856;
@@ -163,6 +169,16 @@
 .form-list__operation-system-winphone input[type="radio"] {
     display: none;
 }
+.form-list__operation-system-ios input[type="radio"] + .form-list__operation-system-radio-indicator:hover,
+.form-list__operation-system-android input[type="radio"] + .form-list__operation-system-radio-indicator:hover,
+.form-list__operation-system-winphone input[type="radio"] + .form-list__operation-system-radio-indicator:hover {
+    border: 2px solid black;
+}
+.form-list__operation-system-ios input[type="radio"] + .form-list__operation-system-radio-indicator:active,
+.form-list__operation-system-android input[type="radio"] + .form-list__operation-system-radio-indicator:active,
+.form-list__operation-system-winphone input[type="radio"] + .form-list__operation-system-radio-indicator:active {
+    border: 2px solid #d22856;
+}
 .form-list__operation-system-ios input[type="radio"] + .form-list__operation-system-radio-indicator,
 .form-list__operation-system-android input[type="radio"] + .form-list__operation-system-radio-indicator,
 .form-list__operation-system-winphone input[type="radio"] + .form-list__operation-system-radio-indicator {
@@ -199,6 +215,12 @@
     width: 34px;
     height: 35px;
     border: 2px solid #e5e5e5;
+}
+.form-list__achievements-checkbox-label input[type="checkbox"] + .form-list__achievements-checkbox-indicator:hover {
+    border: 2px solid black;
+}
+.form-list__achievements-checkbox-label input[type="checkbox"] + .form-list__achievements-checkbox-indicator:active {
+    border: 2px solid #d22856;
 }
 .form-list__achievements-checkbox-label input[type="checkbox"]:checked + .form-list__achievements-checkbox-indicator::after {
     content: "";
@@ -279,6 +301,13 @@
     height: 60px;
     width: 90%;
     margin: 0 auto;
+}
+.form-list button:hover {
+    background: #1c9b5e;
+    color: white;
+}
+.form-list button:active{
+    color: rgba(255,255,255, 0.3);
 }
 .form-list__required-fields {
     text-transform: uppercase;

@@ -30,23 +30,47 @@
     display: inline-block;
     width: 50px;
     margin: 10px 0 0 0;
+    vertical-align: top;
     margin-bottom: 15px;
     position: relative;
 }
 .photo-edit-section__effects-block__crop {
-    background: url("../img/icon-editor-crop.svg");
     width: 50px;
     height: 50px;
+    position: relative;
+}
+.photo-edit-section__effects-block__crop svg {
+    position: absolute;
+    top:0;
+    left:0;
 }
 .photo-edit-section__effects-block__contrast {
-    background: url("../img/icon-editor-contrast.svg") no-repeat 10px 10px;
     width: 50px;
     height: 50px;
+    position: relative;
+}
+.photo-edit-section__effects-block__contrast svg {
+    position: absolute;
+    top:10px;
+    left:10px;
 }
 .photo-edit-section__effects-block__fill {
-    background: url("../img/icon-editor-fill.svg") 0 5px;
     width: 50px;
     height: 50px;
+    position: relative;
+}
+.photo-edit-section__effects-block__fill svg {
+    position: absolute;
+    top:5px;
+    left:3px;
+}
+.photo-edit-section__effects-block__icon:hover svg .photo-edit-section__effects-block-svg {
+    fill: #8d949b;
+    cursor:pointer;
+}
+.photo-edit-section__effects-block__icon svg .photo-edit-section__effects-block-svg-active {
+    fill: #d22856;
+    cursor:pointer;
 }
 .photo-edit-section__effects-block__slider {
     display: none;
@@ -82,6 +106,9 @@
     right: 55px;
     content: "";
 }
+.photo-edit-section__effects-general-slider-toggle:hover {
+    background-color: #d22856;
+}
 .photo-edit-section__effects-block-slider-line {
     position: absolute;
     width: 73%;
@@ -101,6 +128,13 @@
     top: 4px;
     right: 55px;
     content: "";
+}
+.photo-edit-section__effects-block-slider-toggle:hover {
+    cursor: pointer;
+}
+.photo-edit-section__effects-block-slider-toggle:active {
+    background-color: #d22856;
+    cursor: pointer;
 }
 .photo-edit-section__effects-block--fill .photo-edit-section__effects-block-slider-toggle {
     right: 175px;
@@ -137,9 +171,24 @@
     border-radius: 40px;
     margin-bottom: 10px;
 }
+.photo-edit-section__buttons-post:hover {
+    background:#d22856;
+    color: white;
+}
+.photo-edit-section__buttons-post:active {
+    color: rgba(255,255,255,0.4);
+}
 .photo-edit-section__buttons-cancel {
     color: #dddfe0;
     border: 4px solid #dddfe0;
+}
+.photo-edit-section__buttons-cancel:hover {
+    border: 4px solid #b5b9be;
+    color: #b5b9be;
+}
+.photo-edit-section__buttons-cancel:active {
+    color: rgba(255,255,255,0.4);
+    background: #b5b9be;
 }
 @media @tablet-widths {
     .photo-edit-section {
@@ -205,12 +254,36 @@
     .photo-edit-section__effects-block__fill {
         background-position: 12px 2px;
     }
+    .photo-edit-section__effects-block__crop svg {
+        position: absolute;
+        top:9px;
+        left:0px;
+        height: 25px;
+    }
+    .photo-edit-section__effects-block__fill svg {
+        position: absolute;
+        top:10px;
+        left:2px;
+        height: 25px;
+    }
+    .photo-edit-section__effects-block__contrast svg {
+        position: absolute;
+        top:13px;
+        left:9px;
+        height: 18px;
+    }
     .photo-edit-section__effects-block__slider {
         display: inline-block;
     }
     .photo-edit-section__effects-block__slider input {
         width: 130%;
         margin-left: 15px;
+    }
+    .photo-edit-section__effects-block-slider-line {
+        top: 21px;
+    }
+    .photo-edit-section__effects-block-slider-toggle {
+        top: 14px;
     }
     .photo-edit-section__slider {} .photo-edit-section__buttons {
         margin-top: 79px;
@@ -271,6 +344,27 @@
         display: flex;
         width: 100%;
         margin: 0 0 20px 0;
+    }
+    .photo-edit-section__effects-block__crop svg {
+        position: absolute;
+        top:-3px;
+        left:0px;
+        height: 45px;
+    }
+    .photo-edit-section__effects-block__fill svg {
+        position: absolute;
+        top:0px;
+        left:4px;
+        height: 45px;
+    }
+    .photo-edit-section__effects-block__contrast svg {
+        position: absolute;
+        top:4px;
+        left:11px;
+        height: 40px;
+    }
+    .photo-edit-section__effects-block-svg {
+        fill: #d22856;
     }
     .photo-edit-section__effects-block-slider-line {
         position: absolute;
