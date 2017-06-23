@@ -552,9 +552,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .form-list__username {
-        .container();
-    }
+    
     .form-list__title {
         height: 150px;
         width: 880px;
@@ -565,8 +563,7 @@
         dispay: inline;
     }
     .form-list__username {
-        width: 455px !important;
-        /* чтобы перебило медийное выражение по силе из двух селекторов */
+        width: 455px;
         display: inline-block;
         padding-top: 83px;
         margin-left: 0px;
@@ -779,10 +776,9 @@
         letter-spacing: 0.4px;
         height: 60px;
     }
-    .form-list__required-fields-for-fill {
+    .form-list__required-fields .form-list__required-fields-for-fill {
         display: inline;
         margin-left: 4px;
-        color: black !important;
-        /* чтобы перебило медийное выражение по силе из двух селекторов */
+        color: black;
     }
 }
