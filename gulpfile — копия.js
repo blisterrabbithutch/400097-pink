@@ -49,11 +49,11 @@ autoprefixer({
 browsers: ["last 2 versions"]
 })
 ]))
-.pipe(gulp.dest("css"))
+.pipe(gulp.dest("build/css"))
 .pipe(server.stream())
 .pipe(minify())
 .pipe(rename("style.min.css"))
-.pipe(gulp.dest("css"));
+.pipe(gulp.dest("build/css"));
 });
 
 gulp.task("images", function() {
@@ -67,7 +67,7 @@ imagemin.jpegtran({progressive: true})
 
 gulp.task("serve", function() {
 server.init({
-server: ".",
+server: "build/",
 notify: false,
 open: true,
 cors: true,

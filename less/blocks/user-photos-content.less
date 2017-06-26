@@ -53,7 +53,7 @@
     text-align: left;
     width: 320px;
     margin: 0 auto;
-    padding-top: 14px;
+    padding-top: 16px;
     width: 280px;
     background: #f2f2f2;
     color: black;
@@ -74,19 +74,20 @@
 }
 .user-photos-content__item-quote-text {
     margin: 0px 4px;
+    margin-top:-2px;
+    margin-bottom: 6px;
     font-size: 14px;
     padding: 0 15px;
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 24px;
 }
 .user-photos-content__item-quote-likes {
-    padding-bottom: 18px;
+    padding-bottom: 17.5px;
     margin: 0;
     margin-top: 5px;
     margin-left: 20px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 12px;
-    line-spacing: 24px;
     text-transform: uppercase;
     color: #d22856;
     padding-left: 10%;
@@ -245,6 +246,10 @@
         justify-content: center;
     }
     .user-photos-content .user-photos-content__item-image--best {
+        display: block;
+        height: 505px;
+    }
+    .user-photos-content .user-photos-content__item-image--best {
         width: 960px;
     }
     .user-photos-content .user-photos-content__item-image--best img {
@@ -254,7 +259,7 @@
     .user-photos-content__item--best .user-photos-content__item-quote {
         width: 940px;
         height: 92px;
-        padding-top: 0;
+        padding-top: 2px;
         padding-left: 1%;
         box-sizing: border-box;
         padding-right: 1%;
@@ -262,7 +267,8 @@
     .user-photos-content__item--best .user-photos-content__item-quote-text {
         -ms-flex-order: 3;
         order: 3;
-        padding-top: 3px;
+        padding-top: 6px;
+        padding-left: 14px;
         height: 54px;
     }
     .user-photos-content__item--best .user-photos-content__item-quote-author {
@@ -274,8 +280,8 @@
     .user-photos-content__item--best .user-photos-content__item-quote-likes {
         padding-left: 0;
         height: 20px;
-        padding-top: 17px;
-        margin-right: 50px;
+        padding-top: 20px;
+        margin-right: 51px;
         -ms-flex-order: 2;
         order: 2;
         position: relative;
@@ -285,14 +291,10 @@
         background: url(../img/icon-heart.svg);
         content: "";
         position: absolute;
-        top: 20px;
-        left: 106px;
+        top: 25px;
+        left: 104px;
         width: 13px;
         height: 12px;
-    }
-    .user-photos-content .user-photos-content__item-image--best {
-        display: block;
-        height: 510px;
     }
     .user-photos-content__item-image-best-view {
         top: 55px;
@@ -319,7 +321,7 @@
         margin: 0px 4px;
         margin-bottom: auto;
         font-size: 14px;
-        padding: 0 15px;
+        padding: 0 11px;
     }
     .user-photos-content__item-quote-likes {
         padding-left: 0;
