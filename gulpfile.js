@@ -37,7 +37,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("style", function() {
-    gulp.src("less/style.less")
+    gulp.src("less/style.sass")
         .pipe(plumber())
         .pipe(less(
             mqpacker({
@@ -49,11 +49,11 @@ gulp.task("style", function() {
                 browsers: ["last 2 versions"]
             })
         ]))
-        .pipe(gulp.dest("build/css"))
+        .pipe(gulp.dest("css"))
         .pipe(server.stream())
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"));
+        .pipe(gulp.dest("css"));
 });
 
 gulp.task("images", function() {
@@ -71,7 +71,7 @@ gulp.task("images", function() {
 
 gulp.task("serve", function() {
     server.init({
-        server: "build/",
+        server: ".",
         notify: false,
         open: true,
         cors: true,
@@ -88,7 +88,7 @@ gulp.task("serve", function() {
         done();
     });
 
-    gulp.watch("less/**/*.less", ["style"]);
+    gulp.watch("less/**/*.sass", ["style"]);
     gulp.watch("img/*.svg").on("change", server.reload);
     gulp.watch("*.html", ["html:update"]);
 });
